@@ -1,0 +1,84 @@
+/* Override Bootstrap variables with official Groupe Scolaire DUBASS palette */
+:root {
+    /* 🎨 Override Bootstrap colors with DUBASS palette */
+    --bs-primary: #1B4F9C !important;      /* Bleu éducatif, couleur institutionnelle principale */
+    --bs-secondary: #4A90E2 !important;    /* Bleu clair, pour les boutons ou les accents */
+    --bs-success: #4CAF50 !important;      /* Vert éducatif */
+    --bs-info: #2196F3 !important;         /* Bleu d'accent */
+    --bs-warning: #FFB300 !important;      /* Orange doux */
+    --bs-danger: #E53935 !important;       /* Rouge clair */
+    --bs-light: #F2F2F2 !important;        /* Gris clair */
+    --bs-dark: #333333 !important;         /* Gris foncé */
+    --bs-white: #FFFFFF !important;        /* Blanc pur */
+    
+    /* Custom DUBASS accent color */
+    --bs-accent: #F5C542;                   /* Jaune doré, symbole d'énergie et de réussite */
+    
+    /* Body and text colors */
+    --bs-body-color: #333333 !important;
+    --bs-body-bg: #FFFFFF !important;
+    
+    /* Link colors */
+    --bs-link-color: #1B4F9C !important;
+    --bs-link-hover-color: #F5C542 !important;
+    
+    /* Font overrides */
+    --bs-font-sans-serif: 'Roboto', system-ui, -apple-system, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif !important;
+}
+
+/* Additional Bootstrap utility classes for DUBASS accent color */
+.text-accent {
+    color: var(--bs-accent) !important;
+}
+
+.bg-accent {
+    background-color: var(--bs-accent) !important;
+}
+
+.border-accent {
+    border-color: var(--bs-accent) !important;
+}
+
+.btn-accent {
+    background-color: var(--bs-accent);
+    border-color: var(--bs-accent);
+    color: #333333;
+}
+
+.btn-accent:hover,
+.btn-accent:focus,
+.btn-accent:active {
+    background-color: #e6b33c;
+    border-color: #e6b33c;
+    color: #333333;
+}
+
+/* Override primary button styles */
+.btn-primary {
+    background-color: var(--bs-primary) !important;
+    border-color: var(--bs-primary) !important;
+    color: var(--bs-white) !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+    background-color: #153d7a !important;
+    border-color: #153d7a !important;
+    color: var(--bs-white) !important;
+}
+
+/* Override secondary button styles */
+.btn-secondary {
+    background-color: var(--bs-secondary) !important;
+    border-color: var(--bs-secondary) !important;
+    color: var(--bs-white) !important;
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus,
+.btn-secondary:active {
+    background-color: #3a7bc8 !important;
+    border-color: #3a7bc8 !important;
+    color: var(--bs-white) !important;
+}

@@ -1,0 +1,63 @@
+/* Fix for Font Awesome and Bootstrap Icons */
+
+/* Ensure Font Awesome icons are displayed properly */
+.fas, .far, .fab, .fal, .fad {
+    font-family: "Font Awesome 5 Free" !important;
+    font-weight: 900 !important;
+    font-style: normal !important;
+    font-variant: normal !important;
+    text-transform: none !important;
+    line-height: 1 !important;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important;
+}
+
+.fab {
+    font-family: "Font Awesome 5 Brands" !important;
+    font-weight: 400 !important;
+}
+
+.far {
+    font-weight: 400 !important;
+}
+
+/* Bootstrap Icons fix */
+.bi {
+    font-family: "bootstrap-icons" !important;
+}
+
+/* Icon color fixes */
+.btn .fas, .btn .far, .btn .fab, .btn .bi {
+    color: inherit !important;
+}
+
+.text-primary .fas, .text-primary .far, .text-primary .fab, .text-primary .bi {
+    color: var(--color-primary) !important;
+}
+
+.text-secondary .fas, .text-secondary .far, .text-secondary .fab, .text-secondary .bi {
+    color: var(--color-secondary) !important;
+}
+
+.text-accent .fas, .text-accent .far, .text-accent .fab, .text-accent .bi {
+    color: var(--color-accent) !important;
+}
+
+.text-white .fas, .text-white .far, .text-white .fab, .text-white .bi {
+    color: var(--color-white) !important;
+}
+
+/* Navigation icons */
+.navbar .fas, .navbar .far, .navbar .fab, .navbar .bi {
+    color: inherit !important;
+}
+
+/* Footer icons */
+.footer .fas, .footer .far, .footer .fab, .footer .bi {
+    color: inherit !important;
+}
+
+/* Topbar icons */
+.topbar .fas, .topbar .far, .topbar .fab, .topbar .bi {
+    color: inherit !important;
+}

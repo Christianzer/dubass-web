@@ -1,0 +1,619 @@
+/* IST-DUBASS Custom Styles - Palette officielle du Groupe Scolaire DUBASS */
+:root {
+    /* 🎨 Palette principale */
+    --color-primary: #1B4F9C;         /* Bleu éducatif, couleur institutionnelle principale */
+    --color-secondary: #4A90E2;       /* Bleu clair, pour les boutons ou les accents */
+    --color-accent: #F5C542;          /* Jaune doré, symbole d'énergie et de réussite */
+    
+    /* ⚪ Couleurs neutres */
+    --color-white: #FFFFFF;           /* Blanc pur */
+    --color-light: #F2F2F2;          /* Gris clair */
+    --color-text-primary: #333333;   /* Gris foncé */
+    --color-text-secondary: #555555; /* Gris moyen */
+    
+    /* 💡 Couleurs d'état */
+    --color-success: #4CAF50;         /* Vert éducatif */
+    --color-warning: #FFB300;         /* Orange doux */
+    --color-danger: #E53935;          /* Rouge clair */
+    --color-info: #2196F3;           /* Bleu d'accent */
+    
+    /* Police */
+    --font-title: 'Poppins', sans-serif;
+    --font-body: 'Roboto', sans-serif;
+    --font-special: 'Lora', serif;
+}
+
+/* Apply new fonts */
+body, .text-dark, h1, h2, h3, h4, h5, h6, p, small, span {
+    font-family: var(--font-body), sans-serif !important;
+    color: var(--color-text-primary) !important;
+}
+
+.display-1, .display-2, .display-3, .display-4, .display-5, .display-6,
+.h1, .h2, .h3, .h4, .h5, .h6,
+.nav-link, .btn, .title-border-radius {
+    font-family: var(--font-title), sans-serif !important;
+}
+
+/* Apply new colors */
+.text-primary {
+    color: var(--color-primary) !important;
+}
+
+.text-secondary {
+    color: var(--color-secondary) !important;
+}
+
+.text-danger {
+    color: var(--color-danger) !important;
+}
+
+.text-accent {
+    color: var(--color-accent) !important;
+}
+
+.text-success {
+    color: var(--color-success) !important;
+}
+
+.text-warning {
+    color: var(--color-warning) !important;
+}
+
+.text-info {
+    color: var(--color-info) !important;
+}
+
+.bg-primary {
+    background-color: var(--color-primary) !important;
+}
+
+.bg-secondary {
+    background-color: var(--color-secondary) !important;
+}
+
+.bg-accent {
+    background-color: var(--color-accent) !important;
+}
+
+.bg-success {
+    background-color: var(--color-success) !important;
+}
+
+.bg-warning {
+    background-color: var(--color-warning) !important;
+}
+
+.bg-danger {
+    background-color: var(--color-danger) !important;
+}
+
+.bg-info {
+    background-color: var(--color-info) !important;
+}
+
+.bg-light {
+    background-color: var(--color-light) !important;
+}
+
+.border-primary {
+    border-color: var(--color-primary) !important;
+}
+
+.border-secondary {
+    border-color: var(--color-secondary) !important;
+}
+
+.border-accent {
+    border-color: var(--color-accent) !important;
+}
+
+.border-success {
+    border-color: var(--color-success) !important;
+}
+
+.border-warning {
+    border-color: var(--color-warning) !important;
+}
+
+.border-danger {
+    border-color: var(--color-danger) !important;
+}
+
+.border-info {
+    border-color: var(--color-info) !important;
+}
+
+.btn-primary {
+    background-color: var(--color-primary) !important;
+    border-color: var(--color-primary) !important;
+    color: var(--color-white) !important;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+    background-color: #153d7a !important;
+    border-color: #153d7a !important;
+    color: var(--color-white) !important;
+}
+
+.btn-secondary {
+    background-color: var(--color-secondary) !important;
+    border-color: var(--color-secondary) !important;
+    color: var(--color-white) !important;
+}
+
+.btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active {
+    background-color: #3a7bc8 !important;
+    border-color: #3a7bc8 !important;
+    color: var(--color-white) !important;
+}
+
+.btn-accent {
+    background-color: var(--color-accent) !important;
+    border-color: var(--color-accent) !important;
+    color: var(--color-text-primary) !important;
+}
+
+.btn-accent:hover, .btn-accent:focus, .btn-accent:active {
+    background-color: #e6b33c !important;
+    border-color: #e6b33c !important;
+    color: var(--color-text-primary) !important;
+}
+
+.btn-danger {
+    background-color: var(--color-danger) !important;
+    border-color: var(--color-danger) !important;
+    color: var(--color-white) !important;
+}
+
+.btn-danger:hover, .btn-danger:focus, .btn-danger:active {
+    background-color: #c62828 !important;
+    border-color: #c62828 !important;
+    color: var(--color-white) !important;
+}
+
+.btn-success {
+    background-color: var(--color-success) !important;
+    border-color: var(--color-success) !important;
+    color: var(--color-white) !important;
+}
+
+.btn-success:hover, .btn-success:focus, .btn-success:active {
+    background-color: #388e3c !important;
+    border-color: #388e3c !important;
+    color: var(--color-white) !important;
+}
+
+.btn-warning {
+    background-color: var(--color-warning) !important;
+    border-color: var(--color-warning) !important;
+    color: var(--color-text-primary) !important;
+}
+
+.btn-warning:hover, .btn-warning:focus, .btn-warning:active {
+    background-color: #f57f00 !important;
+    border-color: #f57f00 !important;
+    color: var(--color-text-primary) !important;
+}
+
+.btn-info {
+    background-color: var(--color-info) !important;
+    border-color: var(--color-info) !important;
+    color: var(--color-white) !important;
+}
+
+.btn-info:hover, .btn-info:focus, .btn-info:active {
+    background-color: #1976d2 !important;
+    border-color: #1976d2 !important;
+    color: var(--color-white) !important;
+}
+
+/* Adjust title sizes and colors */
+h1, .h1 {
+    font-size: 2rem !important; /* 32px */
+    color: var(--color-primary) !important;
+    font-family: var(--font-title), sans-serif !important;
+}
+
+h2, .h2 {
+    font-size: 1.75rem !important; /* 28px */
+    color: var(--color-primary) !important;
+    font-family: var(--font-title), sans-serif !important;
+}
+
+h3, .h3 {
+    font-size: 1.5rem !important; /* 24px */
+    color: var(--color-primary) !important;
+    font-family: var(--font-title), sans-serif !important;
+}
+
+h4, .h4 {
+    font-size: 1.25rem !important; /* 20px */
+    color: var(--color-primary) !important;
+    font-family: var(--font-title), sans-serif !important;
+}
+
+h5, .h5 {
+    font-size: 1.1rem !important; /* 17.6px */
+    color: var(--color-text-primary) !important;
+    font-family: var(--font-title), sans-serif !important;
+}
+
+h6, .h6 {
+    font-size: 1rem !important; /* 16px */
+    color: var(--color-text-secondary) !important;
+    font-family: var(--font-title), sans-serif !important;
+}
+
+.display-1, .display-2, .display-3, .display-4, .display-5, .display-6 {
+    font-size: 3rem !important; /* 48px and up */
+    color: var(--color-primary) !important;
+    font-family: var(--font-title), sans-serif !important;
+    font-weight: 700 !important;
+}
+
+/* Body text size */
+p, span, small {
+    font-size: 1rem !important; /* 16px */
+    color: var(--color-text-primary) !important;
+    font-family: var(--font-body), sans-serif !important;
+}
+
+.text-dark {
+    color: var(--color-text-primary) !important;
+}
+
+.nav-link {
+    color: var(--color-primary) !important;
+    font-family: var(--font-title), sans-serif !important;
+}
+
+body {
+    color: var(--color-text-primary) !important;
+    background-color: var(--color-white) !important;
+    font-family: var(--font-body), sans-serif !important;
+}
+
+/* Logo styling */
+.logo-img {
+    height: 50px !important;
+    width: auto !important;
+    max-width: 50px !important;
+    object-fit: contain !important;
+    transition: transform 0.3s ease !important;
+}
+
+.navbar-brand:hover .logo-img {
+    transform: scale(1.05) !important;
+}
+
+/* Adjust for better spacing and readability */
+.navbar-brand {
+    text-decoration: none !important;
+}
+
+.navbar-brand h1 {
+    font-size: 1.6rem !important;
+    color: var(--color-primary) !important;
+    margin: 0 !important;
+}
+
+.navbar-brand h1 span {
+    color: var(--color-accent) !important;
+}
+
+.navbar-nav .nav-link {
+    color: var(--color-primary) !important;
+    font-weight: 600;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--color-accent) !important;
+}
+
+/* Logo responsive */
+@media (max-width: 768px) {
+    .logo-img {
+        height: 40px !important;
+        max-width: 40px !important;
+    }
+    
+    .navbar-brand h1 {
+        font-size: 1.4rem !important;
+    }
+}
+
+.nav-item.dropdown .dropdown-toggle {
+    color: var(--color-primary) !important;
+}
+
+.nav-item.dropdown .dropdown-menu {
+    background-color: var(--color-secondary) !important;
+    border: 1px solid var(--color-primary) !important;
+}
+
+.nav-item.dropdown .dropdown-menu .dropdown-item {
+    color: var(--color-white) !important;
+}
+
+.nav-item.dropdown .dropdown-menu .dropdown-item:hover {
+    background-color: var(--color-primary) !important;
+    color: var(--color-white) !important;
+}
+
+/* Footer adjustments */
+.footer {
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%) !important;
+    color: var(--color-white) !important;
+}
+
+.footer h2, .footer h4, .footer h5 {
+    color: var(--color-white) !important;
+}
+
+.footer .text-primary {
+    color: var(--color-accent) !important;
+}
+
+.footer .text-secondary {
+    color: var(--color-white) !important;
+}
+
+.footer p, .footer .text-body {
+    color: var(--color-white) !important;
+}
+
+.footer a.text-body {
+    color: var(--color-white) !important;
+    text-decoration: none !important;
+}
+
+.footer a.text-body:hover {
+    color: var(--color-accent) !important;
+}
+
+.footer .border-primary {
+    border-color: var(--color-accent) !important;
+}
+
+.footer .bg-light {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.copyright {
+    background-color: var(--color-primary) !important;
+}
+
+/* Service items - Override to fix text visibility */
+.service-item {
+    border-color: var(--color-primary) !important;
+    height: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+.service-item .service-content {
+    flex: 1 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.service-item:hover {
+    box-shadow: 0 0.5rem 1rem rgba(27, 79, 156, 0.15) !important;
+    border-color: var(--color-primary) !important;
+}
+
+/* Ensure equal height for methodology cards */
+.methodology-section .service-item {
+    min-height: 350px !important;
+}
+
+.methodology-section .service-content-inner {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+    height: 100% !important;
+}
+
+.methodology-section .service-content-inner p {
+    flex: 1 !important;
+    display: flex !important;
+    align-items: center !important;
+}
+
+/* Force text visibility - no disappearing text */
+.service-item h4,
+.service-item .h4,
+.service-item p,
+.service-item i {
+    color: var(--color-primary) !important;
+    transition: color 0.3s ease !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+/* Hover state with forced visibility */
+.service-item:hover h4,
+.service-item:hover .h4,
+.service-item:hover p,
+.service-item:hover i {
+    color: var(--color-white) !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    z-index: 10 !important;
+}
+
+/* Program items */
+.program-item .program-rate {
+    background-color: var(--color-accent) !important;
+}
+
+.program-item .program-teacher h6.text-primary {
+    color: var(--color-primary) !important;
+}
+
+/* Events items */
+.events-item {
+    background-color: var(--color-primary) !important;
+}
+
+.events-item .events-rate {
+    background-color: var(--color-accent) !important;
+}
+
+/* Team items */
+.team-item {
+    border-color: var(--color-primary) !important;
+}
+
+.team-item .text-primary {
+    color: var(--color-primary) !important;
+}
+
+/* Testimonial items */
+.testimonial-item {
+    border-color: var(--color-primary) !important;
+}
+
+.testimonial-item .text-primary {
+    color: var(--color-primary) !important;
+}
+
+/* Adjust buttons */
+.btn.btn-primary {
+    background-color: var(--color-primary) !important;
+    border-color: var(--color-primary) !important;
+    color: var(--color-white) !important;
+    font-family: var(--font-title), sans-serif;
+}
+
+.btn.btn-primary:hover {
+    background-color: #153d7a !important;
+    border-color: #153d7a !important;
+    color: var(--color-white) !important;
+}
+
+/* Adjust form elements */
+.form-control:focus {
+    border-color: var(--color-primary) !important;
+    box-shadow: 0 0 0 0.2rem rgba(27, 79, 156, 0.25) !important;
+}
+
+/* Footer form elements */
+.footer .form-control {
+    background-color: var(--color-white) !important;
+    color: var(--color-text-primary) !important;
+    border-color: var(--color-accent) !important;
+}
+
+.footer .form-control::placeholder {
+    color: var(--color-text-secondary) !important;
+}
+
+/* Adjust links */
+a {
+    color: var(--color-primary);
+}
+
+a:hover {
+    color: var(--color-accent);
+}
+
+/* Spacing and margins adjustments */
+.py-5 {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+}
+
+.py-4 {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+}
+
+.py-3 {
+    padding-top: 1.5rem !important;
+    padding-bottom: 1.5rem !important;
+}
+
+/* Adjust specific elements for better readability */
+.about {
+    background-color: var(--color-light) !important;
+}
+
+.service {
+    background-color: var(--color-white) !important;
+}
+
+.program {
+    background-color: var(--color-light) !important;
+}
+
+.events {
+    background-color: var(--color-light) !important;
+}
+
+.blog {
+    background-color: var(--color-white) !important;
+}
+
+.team {
+    background-color: var(--color-light) !important;
+}
+
+.testimonial {
+    background-color: var(--color-white) !important;
+}
+
+/* Background adjustments to ensure good contrast */
+.bg-light {
+    background-color: var(--color-light) !important;
+}
+
+/* Adjust spinner */
+#spinner {
+    background-color: var(--color-white) !important;
+}
+
+.spinner-grow.text-primary {
+    color: var(--color-primary) !important;
+}
+
+/* Footer icons contrast */
+.footer .fas, .footer .far, .footer .fab {
+    color: inherit !important;
+}
+
+.footer .text-primary .fas, 
+.footer .text-primary .far, 
+.footer .text-primary .fab {
+    color: var(--color-accent) !important;
+}
+
+/* Footer newsletter section */
+.footer .newsletter-section {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    border-color: var(--color-accent) !important;
+}
+
+.footer .newsletter-section h5 {
+    color: var(--color-text-primary) !important;
+}
+
+/* Footer logo styling */
+.footer-logo {
+    height: 40px !important;
+    width: auto !important;
+    max-width: 40px !important;
+    object-fit: contain !important;
+    filter: brightness(0) invert(1) !important; /* Rendre le logo blanc sur fond foncé */
+}
+
+@media (max-width: 768px) {
+    .footer-logo {
+        height: 30px !important;
+        max-width: 30px !important;
+    }
+}
