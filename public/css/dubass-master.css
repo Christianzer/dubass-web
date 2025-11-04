@@ -1,0 +1,368 @@
+/* 
+====================================
+PALETTE DUBASS OFFICIELLE - MAÎTRE
+====================================
+Version : 1.0
+Date : 2024-11-04
+Auteur : Claude Code
+
+COULEURS AUTORISÉES UNIQUEMENT :
+- Bleu Marine #2B3D88 (70% - Couleur principale)
+- Orange Terre Cuite #C25C26 (20% - Couleur secondaire)  
+- Rouge #FF0000 (5% - Alertes uniquement)
+- Blanc #FFFFFF (5% - Accents)
+
+AUCUNE AUTRE COULEUR N'EST AUTORISÉE
+====================================
+*/
+
+:root {
+    /* === PALETTE DUBASS STRICTE === */
+    --dubass-primary: #2B3D88;      /* Bleu Marine - 70% du site */
+    --dubass-secondary: #C25C26;    /* Orange Terre Cuite - 20% du site */
+    --dubass-danger: #FF0000;       /* Rouge - 5% du site (alertes) */
+    --dubass-white: #FFFFFF;        /* Blanc - 5% du site (accents) */
+    
+    /* === NUANCES AUTORISÉES POUR EFFETS === */
+    /* Nuances Bleu Marine */
+    --dubass-primary-dark: #1f2c66;   /* Hover bleu marine */
+    --dubass-primary-light: rgba(43, 61, 136, 0.1);  /* Background léger */
+    
+    /* Nuances Orange */
+    --dubass-secondary-dark: #a04920; /* Hover orange */
+    --dubass-secondary-light: rgba(194, 92, 38, 0.1); /* Background léger */
+    
+    /* Nuances Rouge */
+    --dubass-danger-dark: #cc0000;    /* Hover rouge */
+    --dubass-danger-light: rgba(255, 0, 0, 0.1); /* Background léger */
+    
+    /* Transparences autorisées */
+    --dubass-overlay-dark: rgba(43, 61, 136, 0.8);  /* Overlay bleu */
+    --dubass-overlay-light: rgba(255, 255, 255, 0.9); /* Overlay blanc */
+}
+
+/* =====================================================
+   RESET ET FORCE DE TOUTES LES COULEURS NON CONFORMES
+   ===================================================== */
+
+/* === TEXTES === */
+body, html, p, span, div, article, section, main, 
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6,
+.text-dark, .text-body, .text-muted, .text-secondary,
+a, li, td, th, label, legend, figcaption {
+    color: var(--dubass-primary) !important;
+    font-family: 'Inter', sans-serif !important;
+}
+
+/* Textes secondaires */
+.text-secondary, .text-muted, small, .small,
+.text-gray, .text-gray-600, .text-gray-500 {
+    color: var(--dubass-secondary) !important;
+}
+
+/* Textes d'alerte uniquement */
+.text-danger, .text-error, .text-alert,
+.alert-text, .error-message {
+    color: var(--dubass-danger) !important;
+}
+
+/* Textes blancs (accents) */
+.text-white, .text-light, .text-contrast {
+    color: var(--dubass-white) !important;
+}
+
+/* === BACKGROUNDS === */
+/* 70% du site en Bleu Marine */
+.bg-primary, .bg-dark, .bg-blue, .bg-navy,
+.navbar, .header, .hero, .hero-header, .page-header,
+.footer, .main-section, .sidebar {
+    background-color: var(--dubass-primary) !important;
+    color: var(--dubass-white) !important;
+}
+
+/* 20% du site en Orange */
+.bg-secondary, .bg-orange, .bg-warning,
+.btn-primary, .btn-cta, .btn-action,
+.highlights, .call-to-action, .accent-section {
+    background-color: var(--dubass-secondary) !important;
+    color: var(--dubass-white) !important;
+}
+
+/* 5% du site en Rouge (alertes) */
+.bg-danger, .bg-error, .bg-alert,
+.alert, .alert-danger, .error, .warning-critical {
+    background-color: var(--dubass-danger) !important;
+    color: var(--dubass-white) !important;
+}
+
+/* 5% du site en Blanc (accents) */
+.bg-white, .bg-light, .bg-clean,
+.content-area, .card-body, .modal-content,
+.form-control, body {
+    background-color: var(--dubass-white) !important;
+    color: var(--dubass-primary) !important;
+}
+
+/* === ÉLIMINATION TOTALE DES COULEURS INTERDITES === */
+/* Griser toutes les nuances de gris */
+.bg-gray, .bg-gray-50, .bg-gray-100, .bg-gray-200, 
+.bg-gray-300, .bg-gray-400, .bg-gray-500, .bg-gray-600, 
+.bg-gray-700, .bg-gray-800, .bg-gray-900,
+.text-gray-100, .text-gray-200, .text-gray-300, 
+.text-gray-400, .text-gray-700, .text-gray-800, .text-gray-900 {
+    background-color: var(--dubass-primary) !important;
+    color: var(--dubass-white) !important;
+}
+
+/* Rediriger toutes les autres couleurs */
+.text-yellow, .text-green, .text-purple, .text-pink, 
+.text-indigo, .text-cyan, .text-teal, .text-lime,
+.text-emerald, .text-blue, .text-violet, .text-fuchsia,
+.text-rose, .text-sky, .text-amber, .text-orange {
+    color: var(--dubass-secondary) !important;
+}
+
+.bg-yellow, .bg-green, .bg-purple, .bg-pink,
+.bg-indigo, .bg-cyan, .bg-teal, .bg-lime,
+.bg-emerald, .bg-blue, .bg-violet, .bg-fuchsia,
+.bg-rose, .bg-sky, .bg-amber, .bg-info, .bg-success {
+    background-color: var(--dubass-primary) !important;
+    color: var(--dubass-white) !important;
+}
+
+/* === BOUTONS DUBASS === */
+.btn {
+    font-family: 'Inter', sans-serif !important;
+    font-weight: 600 !important;
+    transition: all 0.3s ease !important;
+}
+
+/* Bouton principal (Bleu Marine) */
+.btn-primary, .btn-dark, .btn-blue {
+    background-color: var(--dubass-primary) !important;
+    border-color: var(--dubass-primary) !important;
+    color: var(--dubass-white) !important;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+    background-color: var(--dubass-primary-dark) !important;
+    border-color: var(--dubass-primary-dark) !important;
+    color: var(--dubass-white) !important;
+}
+
+/* Bouton secondaire (Orange) */
+.btn-secondary, .btn-orange, .btn-warning {
+    background-color: var(--dubass-secondary) !important;
+    border-color: var(--dubass-secondary) !important;
+    color: var(--dubass-white) !important;
+}
+
+.btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active {
+    background-color: var(--dubass-secondary-dark) !important;
+    border-color: var(--dubass-secondary-dark) !important;
+    color: var(--dubass-white) !important;
+}
+
+/* Bouton d'alerte (Rouge) */
+.btn-danger, .btn-error {
+    background-color: var(--dubass-danger) !important;
+    border-color: var(--dubass-danger) !important;
+    color: var(--dubass-white) !important;
+}
+
+.btn-danger:hover, .btn-danger:focus, .btn-danger:active {
+    background-color: var(--dubass-danger-dark) !important;
+    border-color: var(--dubass-danger-dark) !important;
+    color: var(--dubass-white) !important;
+}
+
+/* Bouton blanc (Accent) */
+.btn-light, .btn-white, .btn-outline-primary {
+    background-color: var(--dubass-white) !important;
+    border-color: var(--dubass-primary) !important;
+    color: var(--dubass-primary) !important;
+}
+
+.btn-light:hover, .btn-white:hover, .btn-outline-primary:hover {
+    background-color: var(--dubass-primary) !important;
+    border-color: var(--dubass-primary) !important;
+    color: var(--dubass-white) !important;
+}
+
+/* === BORDURES === */
+.border, .border-primary {
+    border-color: var(--dubass-primary) !important;
+}
+
+.border-secondary {
+    border-color: var(--dubass-secondary) !important;
+}
+
+.border-danger {
+    border-color: var(--dubass-danger) !important;
+}
+
+.border-white, .border-light {
+    border-color: var(--dubass-white) !important;
+}
+
+/* Éliminer toutes les bordures grises */
+.border-gray, .border-gray-200, .border-gray-300, .border-gray-400 {
+    border-color: var(--dubass-primary) !important;
+}
+
+/* === LIENS === */
+a {
+    color: var(--dubass-primary) !important;
+    text-decoration: none !important;
+    transition: color 0.3s ease !important;
+}
+
+a:hover, a:focus {
+    color: var(--dubass-secondary) !important;
+}
+
+/* === NAVIGATION === */
+.nav-link {
+    color: var(--dubass-primary) !important;
+    font-family: 'Inter', sans-serif !important;
+    font-weight: 600 !important;
+    transition: color 0.3s ease !important;
+}
+
+.nav-link:hover, .nav-link:focus, .nav-link.active {
+    color: var(--dubass-secondary) !important;
+}
+
+.navbar-brand {
+    color: var(--dubass-primary) !important;
+    font-family: 'Inter', sans-serif !important;
+    font-weight: 700 !important;
+}
+
+/* === FORMULAIRES === */
+.form-control {
+    border-color: var(--dubass-primary) !important;
+    background-color: var(--dubass-white) !important;
+    color: var(--dubass-primary) !important;
+}
+
+.form-control:focus {
+    border-color: var(--dubass-secondary) !important;
+    box-shadow: 0 0 0 0.2rem var(--dubass-primary-light) !important;
+}
+
+/* === ALERTES === */
+.alert {
+    border-left: 4px solid var(--dubass-danger) !important;
+}
+
+.alert-primary {
+    background-color: var(--dubass-primary-light) !important;
+    border-color: var(--dubass-primary) !important;
+    color: var(--dubass-primary) !important;
+}
+
+.alert-danger {
+    background-color: var(--dubass-danger-light) !important;
+    border-color: var(--dubass-danger) !important;
+    color: var(--dubass-danger) !important;
+}
+
+/* === CARTES ET COMPOSANTS === */
+.card {
+    border-color: var(--dubass-primary) !important;
+}
+
+.card-header {
+    background-color: var(--dubass-primary) !important;
+    color: var(--dubass-white) !important;
+    border-bottom-color: var(--dubass-primary) !important;
+}
+
+.card-body {
+    background-color: var(--dubass-white) !important;
+    color: var(--dubass-primary) !important;
+}
+
+/* === MODALS === */
+.modal-content {
+    background-color: var(--dubass-white) !important;
+    border-color: var(--dubass-primary) !important;
+}
+
+.modal-header {
+    background-color: var(--dubass-primary) !important;
+    color: var(--dubass-white) !important;
+    border-bottom-color: var(--dubass-primary) !important;
+}
+
+/* === TABLES === */
+.table {
+    color: var(--dubass-primary) !important;
+}
+
+.table thead th {
+    background-color: var(--dubass-primary) !important;
+    color: var(--dubass-white) !important;
+    border-color: var(--dubass-primary) !important;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: var(--dubass-primary-light) !important;
+}
+
+/* === BADGES === */
+.badge {
+    font-family: 'Inter', sans-serif !important;
+}
+
+.badge-primary {
+    background-color: var(--dubass-primary) !important;
+    color: var(--dubass-white) !important;
+}
+
+.badge-secondary {
+    background-color: var(--dubass-secondary) !important;
+    color: var(--dubass-white) !important;
+}
+
+.badge-danger {
+    background-color: var(--dubass-danger) !important;
+    color: var(--dubass-white) !important;
+}
+
+/* === OVERLAYS ET EFFETS === */
+.overlay {
+    background-color: var(--dubass-overlay-dark) !important;
+}
+
+.overlay-light {
+    background-color: var(--dubass-overlay-light) !important;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+    h1, .h1 { font-size: 1.8rem !important; }
+    h2, .h2 { font-size: 1.5rem !important; }
+    h3, .h3 { font-size: 1.3rem !important; }
+}
+
+/* === FORCE GLOBALE === */
+/* Cette règle force TOUTES les couleurs à respecter la palette */
+* {
+    font-family: 'Inter', sans-serif !important;
+}
+
+/* Masquer le spinner avec les bonnes couleurs */
+#spinner {
+    background-color: var(--dubass-white) !important;
+}
+
+.spinner-grow {
+    color: var(--dubass-primary) !important;
+}
+
+/* ===================================
+   FIN DE LA PALETTE DUBASS MAÎTRE
+   =================================== */

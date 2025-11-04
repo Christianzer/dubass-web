@@ -4,15 +4,21 @@
 
 @section('content')
     <!-- Hero Start -->
-    <div class="container-fluid py-5 hero-header wow fadeIn" data-wow-delay="0.1s">
+    <div class="container-fluid py-5" style="background-color: white;">
         <div class="container py-5">
-            <div class="row g-5">
+            <div class="row g-5 align-items-center">
                 <div class="col-lg-7 col-md-12">
-                    <h1 class="mb-3 text-white">Bienvenue à <span class="text-secondary">DUBASS</span></h1>
-                    <h1 class="mb-5 display-1 text-white" style="color: white!important;">Nous procurons à vos enfants La meilleure éducation au meilleur prix</h1>
-                    <p class="text-white mb-4 fs-5">École d'Excellence et d'Innovation - Nous dispensons un enseignement de qualité basé sur des méthodes pédagogiques modernes et personnalisées.</p>
-                    <a href="{{ route('contact') }}" class="btn btn-primary px-4 py-3 px-md-5 me-4 btn-border-radius">Inscription</a>
-                    <a href="{{ route('about') }}" class="btn btn-primary px-4 py-3 px-md-5 btn-border-radius">En savoir plus</a>
+                    <div class="d-flex flex-column">
+                        <p class="display-4 mb-2" style="color: #2B3D88;">Nous procurons à vos enfants</p>
+                        <p class="h1 mb-4" style="color: #2B3D88;">La <span style="color: #CD7F32 !important;">meilleure</span> éducation au <span style="color: #FF0000 !important;">meilleur</span> prix</p>
+                    </div>
+                    <div>
+                        <a href="{{ route('contact') }}" class="btn me-3 mb-2" style="background-color: #CD7F32; color: white; border: none; padding: 12px 30px; border-radius: 5px;">Inscription</a>
+                        <a href="{{ route('about') }}" class="btn mb-2" style="background-color: white; color: #2B3D88; border: 2px solid #2B3D88; padding: 10px 30px; border-radius: 5px;">En savoir plus</a>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-12">
+                    <img src="{{ asset('gemini/herosection.png') }}" class="img-fluid" alt="Groupe Scolaire Dubass">
                 </div>
             </div>
         </div>
@@ -57,59 +63,6 @@
         </div>
     </div>
     <!-- About End -->
-
-    <!-- Service Start -->
-    <div class="container-fluid service py-5">
-        <div class="container py-5">
-            <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 700px;">
-                <h4 class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius">Nos Piliers pour l'Excellence</h4>
-                <h1 class="mb-5 display-3">Les 3 Piliers DUBASS</h1>
-            </div>
-            <div class="row g-5 justify-content-center">
-                <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.1s">
-                    <div class="text-center border-primary border bg-white service-item">
-                        <div class="service-content d-flex align-items-center justify-content-center p-4">
-                            <div class="service-content-inner">
-                                <div class="p-4"><i class="fas fa-graduation-cap fa-6x text-primary"></i></div>
-                                <a href="#" class="h4">UN ENSEIGNEMENT DE QUALITÉ</a>
-                                <p class="my-3">Nous dispensons un enseignement de qualité basé sur des méthodes pédagogiques modernes et personnalisées.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.3s">
-                    <div class="text-center border-primary border bg-white service-item">
-                        <div class="service-content d-flex align-items-center justify-content-center p-4">
-                            <div class="service-content-inner">
-                                <div class="p-4"><i class="fas fa-shield-alt fa-6x text-primary"></i></div>
-                                <a href="#" class="h4">UN ENCADREMENT OPTIMAL</a>
-                                <p class="my-3">Nous limitons l'effectif de nos classes pour permettre une approche pédagogique individualisée et favoriser un cadre agréable et bienveillant.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.5s">
-                    <div class="text-center border-primary border bg-white service-item">
-                        <div class="service-content d-flex align-items-center justify-content-center p-4">
-                            <div class="service-content-inner">
-                                <div class="p-4"><i class="fas fa-heart fa-6x text-primary"></i></div>
-                                <a href="#" class="h4">ATMOSPHÈRE FAMILIALE</a>
-                                <div class="text-start px-3">
-                                    <ul class="list-unstyled text-muted small">
-                                        <li>• Classes spacieuses thématiques</li>
-                                        <li>• Cantine aérée</li>
-                                        <li>• Clubs & Activités extra-scolaires</li>
-                                        <li>• Suivi personnalisé</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Service End -->
 
     <!-- Programs Start -->
     <div class="container-fluid program py-5">

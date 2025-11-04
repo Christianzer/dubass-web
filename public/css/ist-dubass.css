@@ -5,12 +5,12 @@
     --color-secondary: #C25C26;       /* Orange Terre Cuite DUBASS (20%) */
     --color-accent: #FF0000;          /* Rouge DUBASS (5% - alertes) */
     --color-white: #FFFFFF;           /* Blanc DUBASS (5% - accents) */
-    
+
     /* Nuances autorisées */
     --color-primary-dark: #1f2c66;    /* Hover bleu marine */
     --color-secondary-dark: #a04920;  /* Hover orange */
     --color-accent-dark: #cc0000;     /* Hover rouge */
-    
+
     /* REDIRECTION DE TOUTES LES AUTRES COULEURS */
     --color-light: #FFFFFF;           /* Redirigé vers blanc */
     --color-text-primary: #2B3D88;   /* Redirigé vers bleu marine */
@@ -19,7 +19,7 @@
     --color-warning: #C25C26;         /* Redirigé vers orange */
     --color-danger: #FF0000;          /* Rouge DUBASS */
     --color-info: #2B3D88;           /* Redirigé vers bleu marine */
-    
+
     /* Police */
     --font-title: 'Poppins', sans-serif;
     --font-body: 'Roboto', sans-serif;
@@ -257,7 +257,6 @@ h6, .h6 {
 
 /* Body text size */
 p, span, small {
-    font-size: 1rem !important; /* 16px */
     color: var(--color-text-primary) !important;
     font-family: var(--font-body), sans-serif !important;
 }
@@ -320,7 +319,7 @@ body {
         height: 40px !important;
         max-width: 40px !important;
     }
-    
+
     .navbar-brand h1 {
         font-size: 1.4rem !important;
     }
@@ -589,8 +588,8 @@ a:hover {
     color: inherit !important;
 }
 
-.footer .text-primary .fas, 
-.footer .text-primary .far, 
+.footer .text-primary .fas,
+.footer .text-primary .far,
 .footer .text-primary .fab {
     color: var(--color-accent) !important;
 }
