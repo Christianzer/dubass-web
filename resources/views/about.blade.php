@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'À propos - Groupe Scolaire Dubass')
+@section('title', 'À propos - DUBASS École d\'Excellence et d\'Innovation')
 
 @section('content')
     <!-- Page Header Start -->
@@ -27,13 +27,22 @@
                     </div>
                 </div>
                 <div class="col-lg-7 wow fadeIn" data-wow-delay="0.3s">
-                    <h4 class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius">À propos de nous</h4>
-                    <h1 class="text-dark mb-4 display-5">Notre Histoire</h1>
-                    <p class="text-dark mb-4">
-                        Le Groupe Scolaire Dubass a été créé en octobre 2014 à l'initiative de Mme Safoura FADIKA, première femme ingénieur informaticienne et ingénieur statisticien-économiste en Côte d'Ivoire, et du Professeur Kanvaly FADIGA, professeur titulaire en sciences de l'éducation. Ensemble, ils ont fondé une école reposant sur des valeurs solides et une conviction profonde dans le pouvoir de l'éducation.
-                    </p>
-                    <p class="text-dark mb-4">
-                        Notre école est un établissement privé, laïc et mixte regroupant le préscolaire, le primaire et le secondaire, garantissant un suivi complet de l'élève tout au long de son parcours scolaire.
+                    <h4 class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius">À PROPOS DE NOUS</h4>
+                    <h1 class="text-dark mb-4 display-5">Notre Mission</h1>
+                    <div class="p-4 bg-secondary text-white rounded mb-4">
+                        <h3 class="h4 mb-3">NOTRE MISSION</h3>
+                        <p class="h5 mb-3">Éduquer, inspirer et créer des <span class="text-warning">LEADERS</span></p>
+                        <p class="mb-0">Notre mission est d'éduquer, d'inspirer et de créer des leaders responsables, compétents et épanouis qui auront un impact positif sur la société en fournissant une éducation de qualité, inclusive et holistique à tous nos élèves.</p>
+                    </div>
+                    <h4 class="text-primary mb-3">Le Mot des Fondateurs</h4>
+                    <blockquote class="border-start border-primary border-4 ps-3 mb-4">
+                        <p class="text-muted fst-italic mb-3">
+                            "Notre école a été fondée sur des valeurs fortes et un engagement indéfectible envers chaque élève qui nous est confié. Nous croyons en l'égalité des chances, en encourageant chaque enfant à découvrir et développer ses talents uniques..."
+                        </p>
+                        <footer class="text-secondary fw-bold">— Safoura et Kanvaly Fadiga</footer>
+                    </blockquote>
+                    <p class="text-muted small">
+                        <strong>Créé en Octobre 2014</strong> par <strong>Mme Safoura FADIKA</strong> (Première Femme Ingénieur Informaticienne, et Ingénieur Statisticien-Economiste) et le <strong>Professeur Kanvaly FADIGA</strong> (Professeur Titulaire en Sciences de l'Éducation).
                     </p>
                 </div>
             </div>
@@ -54,35 +63,13 @@
                         <div class="service-content d-flex align-items-center justify-content-center p-4">
                             <div class="service-content-inner">
                                 <div class="p-4"><i class="fas fa-door-open fa-6x text-primary"></i></div>
-                                <h4 class="text-primary">Classes spacieuses et thématiques</h4>
-                                <p class="my-3">Des espaces d'apprentissage adaptés et organisés par thème pour favoriser la concentration et l'engagement des élèves.</p>
+                                <h4 class="text-primary">Classes spacieuses thématiques</h4>
+                                <p class="my-3">Des environnements d'apprentissage adaptés et organisés par thème pour favoriser la concentration et l'engagement des élèves.</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-6 col-xl-4 wow fadeIn" data-wow-delay="0.3s">
-                    <div class="text-center border-primary border bg-white service-item">
-                        <div class="service-content d-flex align-items-center justify-content-center p-4">
-                            <div class="service-content-inner">
-                                <div class="p-4"><i class="fas fa-wifi fa-6x text-primary"></i></div>
-                                <h4 class="text-primary">Salle digitale avec Wi-Fi</h4>
-                                <p class="my-3">Infrastructure moderne avec connexion internet haut débit pour l'apprentissage numérique et la recherche.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-6 col-xl-4 wow fadeIn" data-wow-delay="0.5s">
-                    <div class="text-center border-primary border bg-white service-item">
-                        <div class="service-content d-flex align-items-center justify-content-center p-4">
-                            <div class="service-content-inner">
-                                <div class="p-4"><i class="fas fa-book fa-6x text-primary"></i></div>
-                                <h4 class="text-primary">Bibliothèque</h4>
-                                <p class="my-3">Un espace de lecture et de recherche riche en ressources pédagogiques pour développer l'amour de la lecture.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-6 col-xl-4 wow fadeIn" data-wow-delay="0.1s">
                     <div class="text-center border-primary border bg-white service-item">
                         <div class="service-content d-flex align-items-center justify-content-center p-4">
                             <div class="service-content-inner">
@@ -93,7 +80,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-6 col-xl-4 wow fadeIn" data-wow-delay="0.3s">
+                <div class="col-md-6 col-lg-6 col-xl-4 wow fadeIn" data-wow-delay="0.5s">
                     <div class="text-center border-primary border bg-white service-item">
                         <div class="service-content d-flex align-items-center justify-content-center p-4">
                             <div class="service-content-inner">
@@ -104,13 +91,35 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-md-6 col-lg-6 col-xl-4 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="text-center border-primary border bg-white service-item">
+                        <div class="service-content d-flex align-items-center justify-content-center p-4">
+                            <div class="service-content-inner">
+                                <div class="p-4"><i class="fas fa-wifi fa-6x text-primary"></i></div>
+                                <h4 class="text-primary">Salle digitale/Wi-Fi</h4>
+                                <p class="my-3">Infrastructure moderne avec connexion internet haut débit pour l'apprentissage numérique et la recherche.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-4 wow fadeIn" data-wow-delay="0.3s">
+                    <div class="text-center border-primary border bg-white service-item">
+                        <div class="service-content d-flex align-items-center justify-content-center p-4">
+                            <div class="service-content-inner">
+                                <div class="p-4"><i class="fas fa-book fa-6x text-primary"></i></div>
+                                <h4 class="text-primary">Bibliothèque</h4>
+                                <p class="my-3">Un espace de lecture et de recherche riche en ressources pédagogiques pour développer l'amour de la lecture.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="col-md-6 col-lg-6 col-xl-4 wow fadeIn" data-wow-delay="0.5s">
                     <div class="text-center border-primary border bg-white service-item">
                         <div class="service-content d-flex align-items-center justify-content-center p-4">
                             <div class="service-content-inner">
-                                <div class="p-4"><i class="fas fa-heart fa-6x text-primary"></i></div>
-                                <h4 class="text-primary">Atmosphère familiale</h4>
-                                <p class="my-3">Un environnement chaleureux et bienveillant où chaque enfant se sent à l'aise et en sécurité.</p>
+                                <div class="p-4"><i class="fas fa-running fa-6x text-primary"></i></div>
+                                <h4 class="text-primary">Clubs & Activités extra-scolaires</h4>
+                                <p class="my-3">Activités gratuites et payantes pour le développement des talents et des intérêts individuels.</p>
                             </div>
                         </div>
                     </div>
@@ -126,7 +135,8 @@
             <div class="row justify-content-center">
                 <div class="col-lg-8 text-center wow fadeIn" data-wow-delay="0.1s">
                     <h4 class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius">Notre Conviction</h4>
-                    <h2 class="text-dark mb-4 display-5">À Dubass, nous croyons en l'épanouissement de chaque enfant dans un environnement d'apprentissage inclusif et stimulant.</h2>
+                    <h2 class="text-dark mb-4 display-5">Un cadre agréable, moderne et bienveillant pour la réussite et l'épanouissement de vos enfants.</h2>
+                    <p class="text-muted mb-4">Nous construisons un avenir brillant pour vos enfants et en cela pour la Côte d'Ivoire avec notre école d'excellence.</p>
                     <div class="row g-4 mt-4">
                         <div class="col-md-6">
                             <a href="{{ route('programs') }}" class="btn btn-primary btn-lg px-5 py-3 btn-border-radius w-100">Découvrir nos programmes</a>

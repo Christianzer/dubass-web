@@ -1,12 +1,12 @@
 @extends('layouts.app')
 
-@section('title', 'Nos programmes - Groupe Scolaire Dubass')
+@section('title', 'Nos programmes - DUBASS École d\'Excellence et d\'Innovation')
 
 @section('content')
     <!-- Page Header Start -->
     <div class="container-fluid page-header py-5">
         <div class="container text-center py-5">
-            <h1 class="display-2 text-white mb-4 animated slideInDown">Nos programmes d'enseignement</h1>
+            <h1 class="display-2 text-white mb-4 animated slideInDown">NOS PROGRAMMES</h1>
             <nav aria-label="breadcrumb animated slideInDown">
                 <ol class="breadcrumb justify-content-center mb-0">
                     <li class="breadcrumb-item"><a href="{{ route('home') }}">Accueil</a></li>
@@ -22,13 +22,13 @@
         <div class="container py-5">
             <div class="row justify-content-center">
                 <div class="col-lg-8 text-center wow fadeIn" data-wow-delay="0.1s">
-                    <h4 class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius">Notre Approche Pédagogique</h4>
-                    <h2 class="text-dark mb-4 display-5">Un suivi complet de la petite section à la terminale</h2>
+                    <h4 class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius">NOS PROGRAMMES</h4>
+                    <h2 class="text-dark mb-4 display-5">Trois Cycles d'Enseignement</h2>
                     <p class="text-dark mb-4 fs-5">
-                        Le Groupe Scolaire Dubass regroupe trois cycles : le préscolaire, le primaire et le secondaire. Nous assurons un suivi complet et cohérent pour chaque élève tout au long de sa scolarité.
+                        Le groupe scolaire Dubass est un établissement privé, laïc et mixte regroupant le <strong>préscolaire</strong>, le <strong>primaire</strong> et le <strong>secondaire</strong>, garantissant ainsi le suivi et l'accompagnement des élèves tout le long de leur cursus scolaire.
                     </p>
                     <p class="text-dark mb-5">
-                        Nos programmes suivent le curriculum du ministère de l'Éducation nationale de Côte d'Ivoire, enrichis par des méthodologies pédagogiques modernes et interactives. Nous intégrons les meilleures pratiques locales et internationales pour favoriser un apprentissage actif et participatif.
+                        Nos programmes d'études sont basés sur ceux du ministère de l'éducation nationale de Côte d'Ivoire et renforcés de méthodologies innovantes dans un environnement d'apprentissage inclusif et stimulant.
                     </p>
                 </div>
             </div>
@@ -41,7 +41,7 @@
         <div class="container py-5">
             <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 700px;">
                 <h4 class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius">Nos Cycles</h4>
-                <h1 class="mb-5 display-3">Trois niveaux d'excellence</h1>
+                <h1 class="mb-5 display-3">Trois Cycles d'Enseignement</h1>
             </div>
             <div class="row g-5 justify-content-center">
                 <div class="col-md-6 col-lg-6 col-xl-4 wow fadeIn" data-wow-delay="0.1s">
@@ -143,8 +143,8 @@
                         <div class="service-content d-flex align-items-center justify-content-center p-4">
                             <div class="service-content-inner">
                                 <div class="p-4"><i class="fas fa-lightbulb fa-6x text-primary"></i></div>
-                                <h4 class="text-primary">Pédagogie internationale</h4>
-                                <p class="my-3">Des méthodes axées sur la créativité, la participation et la curiosité intellectuelle.</p>
+                                <h4 class="text-primary">Pédagogie Innovante</h4>
+                                <p class="my-3">Programmes éducatifs innovants qui intègrent à la fois les meilleures pratiques pédagogiques locales et internationales axées sur l'apprentissage actif et basées sur des méthodes d'enseignement interactives, encourageant les élèves à devenir des apprenants autonomes et créatifs.</p>
                             </div>
                         </div>
                     </div>
@@ -154,8 +154,8 @@
                         <div class="service-content d-flex align-items-center justify-content-center p-4">
                             <div class="service-content-inner">
                                 <div class="p-4"><i class="fas fa-layer-group fa-6x text-primary"></i></div>
-                                <h4 class="text-primary">Trois cycles d'enseignement</h4>
-                                <p class="my-3">Préscolaire, primaire, secondaire pour un parcours éducatif complet et cohérent.</p>
+                                <h4 class="text-primary">Cycles d'Enseignement</h4>
+                                <p class="my-3">Le groupe scolaire Dubass regroupe le préscolaire, le primaire et le secondaire, garantissant ainsi le suivi et l'accompagnement des élèves tout le long de leur cursus scolaire. Nos programmes d'études sont basés sur ceux du ministère de l'éducation nationale de Côte d'Ivoire et renforcés de méthodologies innovantes.</p>
                             </div>
                         </div>
                     </div>
@@ -165,8 +165,8 @@
                         <div class="service-content d-flex align-items-center justify-content-center p-4">
                             <div class="service-content-inner">
                                 <div class="p-4"><i class="fas fa-brain fa-6x text-primary"></i></div>
-                                <h4 class="text-primary">Développement des compétences</h4>
-                                <p class="my-3">Renforcement des compétences sociales, émotionnelles et cognitives.</p>
+                                <h4 class="text-primary">Développement des Compétences</h4>
+                                <p class="my-3">Nous mettons également un fort accent sur le développement des compétences non-académiques. Nous croyons que chaque enfant a le potentiel de devenir un citoyen global engagé, empathique et responsable.</p>
                             </div>
                         </div>
                     </div>
@@ -176,8 +176,8 @@
                         <div class="service-content d-flex align-items-center justify-content-center p-4">
                             <div class="service-content-inner">
                                 <div class="p-4"><i class="fas fa-running fa-6x text-primary"></i></div>
-                                <h4 class="text-primary">Activités parascolaires</h4>
-                                <p class="my-3">Clubs, sports, danse, arts et engagement communautaire pour un développement global.</p>
+                                <h4 class="text-primary">Activités Extrascolaires</h4>
+                                <p class="my-3">Nous proposons des activités parascolaires gratuites telles que les clubs, la danse, le sport, etc. ainsi que des activités extrascolaires payantes et un suivi personnalisé.</p>
                             </div>
                         </div>
                     </div>
@@ -192,8 +192,8 @@
         <div class="container py-5">
             <div class="row justify-content-center">
                 <div class="col-lg-8 text-center wow fadeIn" data-wow-delay="0.1s">
-                    <h2 class="text-white mb-4">Nous proposons également des activités parascolaires variées : clubs, sports, danse, arts et engagement communautaire.</h2>
-                    <p class="text-white mb-4 fs-5">Découvrez comment nos programmes peuvent contribuer à l'épanouissement de votre enfant.</p>
+                    <h2 class="text-white mb-4">Rejoignez la famille DUBASS</h2>
+                    <p class="text-white mb-4 fs-5">Commencez le chemin de l'excellence pour votre enfant. Les inscriptions sont en cours.</p>
                     <div class="row g-4 mt-4">
                         <div class="col-md-6">
                             <a href="{{ route('contact') }}" class="btn btn-light btn-lg px-5 py-3 btn-border-radius w-100">Inscription</a>

@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Mission et Valeurs - Groupe Scolaire Dubass')
+@section('title', 'Mission et Valeurs - DUBASS École d\'Excellence et d\'Innovation')
 
 @section('content')
     <!-- Page Header Start -->
@@ -28,7 +28,7 @@
                         <div class="position-relative">
                             <i class="fa fa-quote-left fa-3x text-primary position-absolute" style="top: -20px; left: 20px;"></i>
                             <p class="text-dark fs-4 px-5 py-3 mb-0">
-                                Éduquer, inspirer et créer des leaders responsables, compétents et épanouis qui auront un impact positif sur la société.
+                                Notre mission est d'éduquer, d'inspirer et de créer des leaders responsables, compétents et épanouis qui auront un impact positif sur la société en fournissant une éducation de qualité, inclusive et holistique à tous nos élèves.
                             </p>
                             <i class="fa fa-quote-right fa-3x text-primary position-absolute" style="bottom: -20px; right: 20px;"></i>
                         </div>
@@ -44,7 +44,8 @@
         <div class="container py-5">
             <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 700px;">
                 <h4 class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius">Valeurs</h4>
-                <h1 class="mb-5 display-3">Les valeurs du Groupe Scolaire Dubass</h1>
+                <h1 class="mb-5 display-3">NOS 7 VALEURS</h1>
+                <p class="text-muted mb-5">Nous construisons un avenir brillant pour vos enfants et en cela pour la Côte d'Ivoire avec notre école d'excellence.</p>
             </div>
             <div class="row g-4">
                 <div class="col-md-6 col-lg-4 col-xl-3 wow fadeIn" data-wow-delay="0.1s">
@@ -136,47 +137,56 @@
                 <div class="col-lg-10 wow fadeIn" data-wow-delay="0.1s">
                     <div class="text-center mb-5">
                         <h4 class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius">Objectifs</h4>
-                        <h1 class="display-5 text-dark mb-4">Nos objectifs stratégiques</h1>
+                        <h1 class="display-5 text-dark mb-4">NOS 5 OBJECTIFS</h1>
                         <p class="text-dark fs-5 mb-5">
-                            Notre objectif principal est de fournir une éducation de haute qualité, en mettant l'accent sur l'apprentissage académique, le développement personnel et la réussite future.
+                            Fournir une éducation de haute qualité, en mettant l'accent sur l'apprentissage académique, le développement personnel et la préparation à la réussite future.
                         </p>
                     </div>
                     
-                    <div class="row g-5">
-                        <div class="col-md-6 col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-                            <div class="bg-light border border-primary rounded p-4 h-100">
-                                <div class="d-flex align-items-center mb-3">
-                                    <i class="fas fa-trophy fa-3x text-primary me-3"></i>
-                                    <h4 class="text-primary mb-0">Promouvoir l'excellence académique</h4>
+                    <div class="row g-4">
+                        <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.1s">
+                            <div class="bg-light border border-primary rounded p-4 h-100 text-center">
+                                <div class="bg-secondary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                                    <span class="h4 mb-0">1</span>
                                 </div>
-                                <p class="text-dark">Viser les plus hauts standards d'éducation pour préparer nos élèves aux défis futurs avec des résultats académiques exceptionnels.</p>
+                                <h4 class="text-primary mb-3">Éducation de qualité</h4>
+                                <p class="text-dark">Notre objectif principal est de fournir aux élèves une éducation de haute qualité, en mettant l'accent sur l'apprentissage académique, le développement personnel et la préparation à la réussite future.</p>
                             </div>
                         </div>
-                        <div class="col-md-6 col-lg-6 wow fadeIn" data-wow-delay="0.3s">
-                            <div class="bg-light border border-primary rounded p-4 h-100">
-                                <div class="d-flex align-items-center mb-3">
-                                    <i class="fas fa-search fa-3x text-primary me-3"></i>
-                                    <h4 class="text-primary mb-0">Cultiver la curiosité et la créativité</h4>
+                        <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.2s">
+                            <div class="bg-light border border-primary rounded p-4 h-100 text-center">
+                                <div class="bg-secondary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                                    <span class="h4 mb-0">2</span>
                                 </div>
-                                <p class="text-dark">Développer l'esprit d'investigation et l'innovation chez nos élèves pour qu'ils deviennent des penseurs critiques et créatifs.</p>
+                                <h4 class="text-primary mb-3">Promouvoir l'excellence académique</h4>
+                                <p class="text-dark">Nous nous efforçons d'encourager l'excellence académique en fournissant un environnement d'apprentissage stimulant. Nous encourageons nos élèves à atteindre leur plein potentiel en offrant des programmes d'études rigoureux, des ressources pédagogiques de pointe et un soutien individualisé.</p>
                             </div>
                         </div>
-                        <div class="col-md-6 col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-                            <div class="bg-light border border-primary rounded p-4 h-100">
-                                <div class="d-flex align-items-center mb-3">
-                                    <i class="fas fa-users fa-3x text-primary me-3"></i>
-                                    <h4 class="text-primary mb-0">Favoriser la diversité et l'inclusion</h4>
+                        <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.3s">
+                            <div class="bg-light border border-primary rounded p-4 h-100 text-center">
+                                <div class="bg-secondary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                                    <span class="h4 mb-0">3</span>
                                 </div>
-                                <p class="text-dark">Créer un environnement accueillant où chaque élève, quelles que soient ses origines, peut s'épanouir et réussir pleinement.</p>
+                                <h4 class="text-primary mb-3">Promouvoir l'apprentissage holistique</h4>
+                                <p class="text-dark">Outre l'apprentissage académique, nous croyons en l'importance du développement holistique de chaque élève. Nous offrons une variété d'activités et de programmes éducatifs complémentaires, tels que des clubs, des sports, des arts et des activités communautaires, pour nourrir les talents et les intérêts individuels.</p>
                             </div>
                         </div>
-                        <div class="col-md-6 col-lg-6 wow fadeIn" data-wow-delay="0.7s">
-                            <div class="bg-light border border-primary rounded p-4 h-100">
-                                <div class="d-flex align-items-center mb-3">
-                                    <i class="fas fa-brain fa-3x text-primary me-3"></i>
-                                    <h4 class="text-primary mb-0">Promouvoir l'apprentissage holistique</h4>
+                        <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.4s">
+                            <div class="bg-light border border-primary rounded p-4 h-100 text-center">
+                                <div class="bg-secondary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                                    <span class="h4 mb-0">4</span>
                                 </div>
-                                <p class="text-dark">Développer toutes les dimensions de la personnalité : intellectuelle, émotionnelle, sociale, physique et spirituelle.</p>
+                                <h4 class="text-primary mb-3">Cultiver la curiosité et la créativité</h4>
+                                <p class="text-dark">Nous encourageons nos élèves à explorer leur curiosité et à nourrir leur créativité. Nous mettons l'accent sur l'apprentissage actif et participatif, en encourageant les questions, l'expérimentation et la pensée critique.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.5s">
+                            <div class="bg-light border border-primary rounded p-4 h-100 text-center">
+                                <div class="bg-secondary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                                    <span class="h4 mb-0">5</span>
+                                </div>
+                                <h4 class="text-primary mb-3">Favoriser la diversité et l'inclusion</h4>
+                                <p class="text-dark">Nous valorisons la diversité et l'inclusion dans notre communauté scolaire. Nous créons un environnement respectueux où chaque élève se sent accueilli et valorisé, peu importe son origine culturelle, son statut socioéconomique ou ses capacités.</p>
                             </div>
                         </div>
                     </div>

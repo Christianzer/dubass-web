@@ -1,29 +1,29 @@
 /* Override Bootstrap variables with official Groupe Scolaire DUBASS palette */
 :root {
-    /* 🎨 Override Bootstrap colors with DUBASS palette */
-    --bs-primary: #1B4F9C !important;      /* Bleu éducatif, couleur institutionnelle principale */
-    --bs-secondary: #4A90E2 !important;    /* Bleu clair, pour les boutons ou les accents */
-    --bs-success: #4CAF50 !important;      /* Vert éducatif */
-    --bs-info: #2196F3 !important;         /* Bleu d'accent */
-    --bs-warning: #FFB300 !important;      /* Orange doux */
-    --bs-danger: #E53935 !important;       /* Rouge clair */
-    --bs-light: #F2F2F2 !important;        /* Gris clair */
-    --bs-dark: #333333 !important;         /* Gris foncé */
-    --bs-white: #FFFFFF !important;        /* Blanc pur */
+    /* 🎨 PALETTE DUBASS STRICTE - BOOTSTRAP OVERRIDE */
+    --bs-primary: #2B3D88 !important;      /* Bleu Marine DUBASS (70%) */
+    --bs-secondary: #C25C26 !important;    /* Orange Terre Cuite DUBASS (20%) */
+    --bs-success: #2B3D88 !important;      /* Redirigé vers bleu marine */
+    --bs-info: #2B3D88 !important;         /* Redirigé vers bleu marine */
+    --bs-warning: #C25C26 !important;      /* Redirigé vers orange */
+    --bs-danger: #FF0000 !important;       /* Rouge DUBASS (5%) */
+    --bs-light: #FFFFFF !important;        /* Blanc DUBASS (5%) */
+    --bs-dark: #2B3D88 !important;         /* Redirigé vers bleu marine */
+    --bs-white: #FFFFFF !important;        /* Blanc DUBASS */
     
-    /* Custom DUBASS accent color */
-    --bs-accent: #F5C542;                   /* Jaune doré, symbole d'énergie et de réussite */
+    /* Élimination de l'accent jaune */
+    --bs-accent: #C25C26;                   /* Redirigé vers orange DUBASS */
     
     /* Body and text colors */
-    --bs-body-color: #333333 !important;
+    --bs-body-color: #2B3D88 !important;
     --bs-body-bg: #FFFFFF !important;
     
     /* Link colors */
-    --bs-link-color: #1B4F9C !important;
-    --bs-link-hover-color: #F5C542 !important;
+    --bs-link-color: #2B3D88 !important;
+    --bs-link-hover-color: #C25C26 !important;
     
     /* Font overrides */
-    --bs-font-sans-serif: 'Roboto', system-ui, -apple-system, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif !important;
+    --bs-font-sans-serif: 'Inter', system-ui, -apple-system, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif !important;
 }
 
 /* Additional Bootstrap utility classes for DUBASS accent color */
@@ -42,15 +42,15 @@
 .btn-accent {
     background-color: var(--bs-accent);
     border-color: var(--bs-accent);
-    color: #333333;
+    color: #FFFFFF;
 }
 
 .btn-accent:hover,
 .btn-accent:focus,
 .btn-accent:active {
-    background-color: #e6b33c;
-    border-color: #e6b33c;
-    color: #333333;
+    background-color: #a04920;
+    border-color: #a04920;
+    color: #FFFFFF;
 }
 
 /* Override primary button styles */
@@ -63,8 +63,8 @@
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active {
-    background-color: #153d7a !important;
-    border-color: #153d7a !important;
+    background-color: #1f2c66 !important;
+    border-color: #1f2c66 !important;
     color: var(--bs-white) !important;
 }
 
@@ -78,7 +78,7 @@
 .btn-secondary:hover,
 .btn-secondary:focus,
 .btn-secondary:active {
-    background-color: #3a7bc8 !important;
-    border-color: #3a7bc8 !important;
+    background-color: #a04920 !important;
+    border-color: #a04920 !important;
     color: var(--bs-white) !important;
 }

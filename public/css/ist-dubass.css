@@ -1,21 +1,24 @@
 /* IST-DUBASS Custom Styles - Palette officielle du Groupe Scolaire DUBASS */
 :root {
-    /* 🎨 Palette principale */
-    --color-primary: #1B4F9C;         /* Bleu éducatif, couleur institutionnelle principale */
-    --color-secondary: #4A90E2;       /* Bleu clair, pour les boutons ou les accents */
-    --color-accent: #F5C542;          /* Jaune doré, symbole d'énergie et de réussite */
+    /* 🎨 PALETTE DUBASS STRICTE - UNIQUEMENT 4 COULEURS */
+    --color-primary: #2B3D88;         /* Bleu Marine DUBASS (70%) */
+    --color-secondary: #C25C26;       /* Orange Terre Cuite DUBASS (20%) */
+    --color-accent: #FF0000;          /* Rouge DUBASS (5% - alertes) */
+    --color-white: #FFFFFF;           /* Blanc DUBASS (5% - accents) */
     
-    /* ⚪ Couleurs neutres */
-    --color-white: #FFFFFF;           /* Blanc pur */
-    --color-light: #F2F2F2;          /* Gris clair */
-    --color-text-primary: #333333;   /* Gris foncé */
-    --color-text-secondary: #555555; /* Gris moyen */
+    /* Nuances autorisées */
+    --color-primary-dark: #1f2c66;    /* Hover bleu marine */
+    --color-secondary-dark: #a04920;  /* Hover orange */
+    --color-accent-dark: #cc0000;     /* Hover rouge */
     
-    /* 💡 Couleurs d'état */
-    --color-success: #4CAF50;         /* Vert éducatif */
-    --color-warning: #FFB300;         /* Orange doux */
-    --color-danger: #E53935;          /* Rouge clair */
-    --color-info: #2196F3;           /* Bleu d'accent */
+    /* REDIRECTION DE TOUTES LES AUTRES COULEURS */
+    --color-light: #FFFFFF;           /* Redirigé vers blanc */
+    --color-text-primary: #2B3D88;   /* Redirigé vers bleu marine */
+    --color-text-secondary: #C25C26; /* Redirigé vers orange */
+    --color-success: #2B3D88;         /* Redirigé vers bleu marine */
+    --color-warning: #C25C26;         /* Redirigé vers orange */
+    --color-danger: #FF0000;          /* Rouge DUBASS */
+    --color-info: #2B3D88;           /* Redirigé vers bleu marine */
     
     /* Police */
     --font-title: 'Poppins', sans-serif;
@@ -23,10 +26,10 @@
     --font-special: 'Lora', serif;
 }
 
-/* Apply new fonts */
+/* Apply new fonts with DUBASS colors */
 body, .text-dark, h1, h2, h3, h4, h5, h6, p, small, span {
-    font-family: var(--font-body), sans-serif !important;
-    color: var(--color-text-primary) !important;
+    font-family: 'Inter', sans-serif !important;
+    color: var(--color-primary) !important;
 }
 
 .display-1, .display-2, .display-3, .display-4, .display-5, .display-6,

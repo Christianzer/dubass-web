@@ -3,10 +3,10 @@
 
 <head>
     <meta charset="utf-8">
-    <title>@yield('title', 'Groupe Scolaire Dubass')</title>
+    <title>@yield('title', 'DUBASS - École d\'Excellence et d\'Innovation')</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
+    <meta content="DUBASS, école excellence, innovation, éducation qualité, formation leaders, Côte d'Ivoire, préscolaire, primaire, secondaire, Safoura FADIKA, Kanvaly FADIGA" name="keywords">
+    <meta content="DUBASS - École d'Excellence et d'Innovation. Nous procurons à vos enfants la meilleure éducation au meilleur prix. Fondée en 2014 par Safoura FADIKA et Kanvaly FADIGA." name="description">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -78,19 +78,13 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav mx-auto">
                         <a href="{{ route('home') }}" class="nav-item nav-link {{ request()->routeIs('home') ? 'active' : '' }}">Accueil</a>
-                        <a href="{{ route('about') }}" class="nav-item nav-link {{ request()->routeIs('about') ? 'active' : '' }}">À propos</a>
-                        <a href="{{ route('founders') }}" class="nav-item nav-link {{ request()->routeIs('founders') ? 'active' : '' }}">Fondateurs</a>
-                        <a href="{{ route('programs') }}" class="nav-item nav-link {{ request()->routeIs('programs') ? 'active' : '' }}">Programmes</a>
-                        <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">École</a>
-                            <div class="dropdown-menu m-0 bg-secondary rounded-0">
-                                <a href="{{ route('mission') }}" class="dropdown-item">Mission & Valeurs</a>
-                                <a href="{{ route('team') }}" class="dropdown-item">Notre Équipe</a>
-                            </div>
-                        </div>
-                        <a href="{{ route('contact') }}" class="nav-item nav-link {{ request()->routeIs('contact') ? 'active' : '' }}">Contact</a>
+                        <a href="{{ route('about') }}" class="nav-item nav-link {{ request()->routeIs('about') ? 'active' : '' }}">À propos de nous</a>
+                        <a href="{{ route('mission') }}" class="nav-item nav-link {{ request()->routeIs('mission') ? 'active' : '' }}">Nos objectifs</a>
+                        <a href="{{ route('programs') }}" class="nav-item nav-link {{ request()->routeIs('programs') ? 'active' : '' }}">Nos programmes</a>
+                        <a href="{{ route('team') }}" class="nav-item nav-link {{ request()->routeIs('team') ? 'active' : '' }}">Notre Équipe</a>
+                        <a href="{{ route('contact') }}" class="nav-item nav-link {{ request()->routeIs('contact') ? 'active' : '' }}">Contactez-nous</a>
                     </div>
-                    <a href="{{ route('login') }}" class="btn btn-primary btn-md-square rounded-circle"><i class="fas fa-user text-white"></i></a>
+                    <a href="{{ route('contact') }}" class="btn btn-secondary px-4 py-2 rounded-full font-semibold text-sm">Inscription</a>
                 </div>
             </nav>
         </div>
@@ -109,7 +103,7 @@
                             <img src="{{ asset('gemini/logo.png') }}" alt="Groupe Scolaire Dubass" class="footer-logo me-2">
                             <h2 class="fw-bold mb-0"><span class="text-primary mb-0">Groupe Scolaire</span><span class="text-secondary"> Dubass</span></h2>
                         </div>
-                        <p class="mb-4">Éduquer, inspirer et créer des leaders responsables, compétents et épanouis qui auront un impact positif sur la société.</p>
+                        <p class="mb-4">Notre mission est d'éduquer, d'inspirer et de créer des leaders responsables, compétents et épanouis qui auront un impact positif sur la société en fournissant une éducation de qualité, inclusive et holistique à tous nos élèves.</p>
                         <div class="border border-primary p-3 rounded bg-light">
                             <h5 class="mb-3">Newsletter</h5>
                             <div class="position-relative mx-auto border border-primary rounded" style="max-width: 400px;">
@@ -124,10 +118,11 @@
                         <h4 class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius">LIENS RAPIDES</h4>
                         <div class="d-flex flex-column align-items-start">
                             <a href="{{ route('home') }}" class="text-body mb-2">Accueil</a>
-                            <a href="{{ route('programs') }}" class="text-body mb-2">Programmes</a>
-                            <a href="{{ route('mission') }}" class="text-body mb-2">Mission</a>
-                            <a href="{{ route('team') }}" class="text-body mb-2">Équipe</a>
-                            <a href="{{ route('contact') }}" class="text-body mb-2">Contact</a>
+                            <a href="{{ route('about') }}" class="text-body mb-2">À propos de nous</a>
+                            <a href="{{ route('mission') }}" class="text-body mb-2">Nos objectifs</a>
+                            <a href="{{ route('programs') }}" class="text-body mb-2">Nos programmes</a>
+                            <a href="{{ route('team') }}" class="text-body mb-2">Notre Équipe</a>
+                            <a href="{{ route('contact') }}" class="text-body mb-2">Contactez-nous</a>
                         </div>
                     </div>
                 </div>
@@ -194,10 +189,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    <span class="text-light">Groupe Scolaire Dubass – Éduquer, inspirer et créer des leaders.</span>
+                    <span class="text-light">DUBASS - École d'Excellence et d'Innovation – La meilleure éducation au meilleur prix.</span>
                 </div>
                 <div class="col-md-6 my-auto text-center text-md-end text-white">
-                    <span class="text-light">© Groupe Scolaire Dubass – Tous droits réservés.</span>
+                    <span class="text-light">© 2024 DUBASS – Tous droits réservés.</span>
                 </div>
             </div>
         </div>

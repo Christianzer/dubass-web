@@ -1,12 +1,12 @@
 @extends('layouts.app')
 
-@section('title', 'Notre équipe - Groupe Scolaire Dubass')
+@section('title', 'Notre équipe - DUBASS École d\'Excellence et d\'Innovation')
 
 @section('content')
     <!-- Page Header Start -->
     <div class="container-fluid page-header py-5">
         <div class="container text-center py-5">
-            <h1 class="display-2 text-white mb-4 animated slideInDown">Notre équipe dirigeante</h1>
+            <h1 class="display-2 text-white mb-4 animated slideInDown">NOTRE ÉQUIPE DIRIGEANTE</h1>
             <nav aria-label="breadcrumb animated slideInDown">
                 <ol class="breadcrumb justify-content-center mb-0">
                     <li class="breadcrumb-item"><a href="{{ route('home') }}">Accueil</a></li>
@@ -23,9 +23,9 @@
             <div class="row justify-content-center">
                 <div class="col-lg-8 text-center wow fadeIn" data-wow-delay="0.1s">
                     <h4 class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius">Leadership</h4>
-                    <h2 class="text-dark mb-4 display-5">Une équipe dynamique, passionnée et engagée au service de la réussite des élèves.</h2>
+                    <h2 class="text-dark mb-4 display-5">Une équipe dynamique, passionnée et engagée</h2>
                     <p class="text-dark mb-5 fs-5">
-                        Notre équipe dirigeante réunit des professionnels expérimentés et dévoués, unis par une vision commune : offrir la meilleure éducation possible à chaque enfant qui nous fait confiance.
+                        Le groupe scolaire Dubass est un employeur de premier choix qui attire et délèse un personnel de qualité centré sur le suivi et l'épanouissement des élèves.
                     </p>
                 </div>
             </div>
@@ -47,15 +47,15 @@
                             <a class="share-link btn btn-primary btn-md-square text-white rounded-circle" href=""><i class="fas fa-envelope"></i></a>
                         </div>
                         <div class="team-content text-center py-3">
-                            <h4 class="text-primary">Safoura FADIGA</h4>
+                            <h4 class="text-primary">SAFOURA FADIGA</h4>
                             <p class="text-muted mb-2">Directrice Générale</p>
-                            <small class="text-dark">Ingénieur informaticienne et statisticien-économiste</small>
+                            <small class="text-dark">Première Femme Ingénieur Informaticienne et Ingénieur Statisticien-Economiste</small>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 col-xl-3 wow fadeIn" data-wow-delay="0.3s">
                     <div class="team-item border border-primary img-border-radius overflow-hidden">
-                        <img src="{{ asset('img/team-2.jpg') }}" class="img-fluid w-100" alt="Anne AGNAMAN">
+                        <img src="{{ asset('img/team-2.jpg') }}" class="img-fluid w-100" alt="Bernard KABLAN">
                         <div class="team-icon d-flex align-items-center justify-content-center">
                             <a class="share btn btn-primary btn-md-square text-white rounded-circle me-3" href=""><i class="fas fa-share-alt"></i></a>
                             <a class="share-link btn btn-primary btn-md-square text-white rounded-circle me-3" href=""><i class="fab fa-facebook-f"></i></a>
@@ -63,15 +63,15 @@
                             <a class="share-link btn btn-primary btn-md-square text-white rounded-circle" href=""><i class="fas fa-envelope"></i></a>
                         </div>
                         <div class="team-content text-center py-3">
-                            <h4 class="text-primary">Anne AGNAMAN</h4>
-                            <p class="text-muted mb-2">Préscolaire / Vie scolaire</p>
-                            <small class="text-dark">Responsable du cycle préscolaire et de la vie scolaire</small>
+                            <h4 class="text-primary">BERNARD KABLAN</h4>
+                            <p class="text-muted mb-2">Primaire et secondaire</p>
+                            <small class="text-dark">Directeur des cycles primaire et secondaire</small>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 col-xl-3 wow fadeIn" data-wow-delay="0.5s">
                     <div class="team-item border border-primary img-border-radius overflow-hidden">
-                        <img src="{{ asset('img/team-3.jpg') }}" class="img-fluid w-100" alt="Bakayoko ABDOULAYE">
+                        <img src="{{ asset('img/team-3.jpg') }}" class="img-fluid w-100" alt="Anne AGNAMAN">
                         <div class="team-icon d-flex align-items-center justify-content-center">
                             <a class="share btn btn-primary btn-md-square text-white rounded-circle me-3" href=""><i class="fas fa-share-alt"></i></a>
                             <a class="share-link btn btn-primary btn-md-square text-white rounded-circle me-3" href=""><i class="fab fa-facebook-f"></i></a>
@@ -79,15 +79,15 @@
                             <a class="share-link btn btn-primary btn-md-square text-white rounded-circle" href=""><i class="fas fa-envelope"></i></a>
                         </div>
                         <div class="team-content text-center py-3">
-                            <h4 class="text-primary">Bakayoko ABDOULAYE</h4>
-                            <p class="text-muted mb-2">Vie scolaire</p>
-                            <small class="text-dark">Responsable de la discipline et du bien-être des élèves</small>
+                            <h4 class="text-primary">ANNE AGNAMAN</h4>
+                            <p class="text-muted mb-2">PréScolaire</p>
+                            <small class="text-dark">Directrice du cycle préscolaire</small>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 col-xl-3 wow fadeIn" data-wow-delay="0.7s">
                     <div class="team-item border border-primary img-border-radius overflow-hidden">
-                        <img src="{{ asset('img/team-4.jpg') }}" class="img-fluid w-100" alt="Bernard KABLAN">
+                        <img src="{{ asset('img/team-4.jpg') }}" class="img-fluid w-100" alt="Aboubacar YAYA KONE">
                         <div class="team-icon d-flex align-items-center justify-content-center">
                             <a class="share btn btn-primary btn-md-square text-white rounded-circle me-3" href=""><i class="fas fa-share-alt"></i></a>
                             <a class="share-link btn btn-primary btn-md-square text-white rounded-circle me-3" href=""><i class="fab fa-facebook-f"></i></a>
@@ -95,9 +95,9 @@
                             <a class="share-link btn btn-primary btn-md-square text-white rounded-circle" href=""><i class="fas fa-envelope"></i></a>
                         </div>
                         <div class="team-content text-center py-3">
-                            <h4 class="text-primary">Bernard KABLAN</h4>
-                            <p class="text-muted mb-2">Primaire et secondaire</p>
-                            <small class="text-dark">Directeur pédagogique des cycles primaire et secondaire</small>
+                            <h4 class="text-primary">ABOUBACAR YAYA KONE</h4>
+                            <p class="text-muted mb-2">Vie Scolaire</p>
+                            <small class="text-dark">Directeur de la Vie Scolaire</small>
                         </div>
                     </div>
                 </div>
