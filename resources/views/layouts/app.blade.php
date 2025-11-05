@@ -113,7 +113,7 @@
             }
 
             .mobile-navigation {
-                display: block !important;
+                display: none !important;
             }
 
             .mobile-nav-layout {

@@ -179,66 +179,138 @@
         }
 
         @media (max-width: 768px) {
-            .hero-title, .hero-subtitle {
-                font-size: 1.8rem;
-            }
-
-            .hero-section .row {
-                flex-direction: column-reverse;
-            }
-
-            .hero-section .col-lg-6:first-child {
-                text-align: center;
-                margin-top: 1rem;
-            }
-
-            .hero-image-container {
-                padding: 1rem;
-            }
-
             .hero-section {
-                margin-bottom: 2rem;
+                display: none;
             }
 
-            .banner-container {
-                flex-direction: column;
-                min-height: auto;
-                max-height: none;
-                height: auto;
+            .mobile-hero-section-1 {
+                background-color: var(--dubass-blue);
+                padding: 1rem 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 55vh;
             }
 
-            .banner-block {
-                padding: 1rem 0.5rem;
-                min-height: 140px;
+            .mobile-hero-section-1 img {
+                max-width: 80%;
+                max-height: 80%;
+                object-fit: contain;
+            }
+
+            .mobile-hero-section-2 {
+                background-color: white;
+                padding: 1rem;
+                height: 30vh;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
             }
 
-            .banner-content {
+            .mobile-sections-container {
+                display: flex;
                 flex-direction: column;
-                text-align: center;
-                gap: 0.5rem;
+                height: 100vh;
+                overflow: hidden;
             }
 
-            .banner-icon {
-                font-size: 2rem;
+            .mobile-hero-section-2 .hero-title {
+                font-size: 1.1rem;
+                font-weight: 700;
+                line-height: 1.2;
+                color: var(--dubass-blue);
+                text-align: left;
+                margin-bottom: 1rem;
+            }
+
+            .mobile-hero-section-2 .hero-subtitle {
+                font-size: 1rem;
+                font-weight: 700;
+                line-height: 1.2;
+                color: #333;
+                text-align: left;
+                margin-bottom: 2rem;
+            }
+
+            .mobile-hero-section-2 .buttons-container {
+                display: flex;
+                flex-direction: row;
+                gap: 0.8rem;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .mobile-hero-section-2 .btn {
+                font-size: 0.8rem;
+                padding: 8px 16px;
+            }
+
+            .mobile-hero-section-3 {
+                padding: 0;
+                height: 15vh;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .mobile-banners {
+                display: flex;
+                flex-direction: row;
+                gap: 0;
+                height: 100%;
+                flex: 1;
+            }
+
+            .mobile-banner {
+                padding: 1rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                color: white;
+                font-weight: 700;
+                font-size: 0.8rem;
+                text-transform: uppercase;
+                flex: 1;
+                gap: 0.3rem;
+                text-align: center;
+            }
+
+            .mobile-banner-icon {
+                font-size: 1.5rem;
                 margin-bottom: 0.3rem;
             }
 
-            .banner-title {
-                font-size: 0.8rem;
-                margin-bottom: 0.5rem;
+            body {
+                margin: 0;
+                padding: 0;
+                display: flex;
+                flex-direction: column;
+                height: 100vh;
+                overflow: hidden;
             }
 
-            .banner-text {
-                font-size: 0.8rem;
-                text-align: center;
+            main {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                margin: 0;
+                padding: 0;
             }
 
-            .banner-list {
-                font-size: 0.75rem;
-                text-align: center;
+            .mobile-banner-menu {
+                background-color: var(--dubass-orange);
+            }
+
+            .mobile-banner-portail {
+                background-color: var(--dubass-blue);
+            }
+
+            .mobile-banner-contact {
+                background-color: var(--dubass-orange);
+            }
+
+            .banner-section {
+                display: none;
             }
         }
     </style>
@@ -246,7 +318,7 @@
 
 @section('content')
 
-    <!-- Hero Section -->
+    <!-- Hero Section Desktop -->
     <section class="hero-section">
         <div class="container">
             <div class="row align-items-center">
@@ -282,6 +354,51 @@
             </div>
         </div>
     </section>
+
+    <!-- Mobile Hero Sections -->
+    <div class="mobile-sections-container d-block d-md-none">
+        <section class="mobile-hero-section-1">
+            <div class="text-center">
+                <img src="{{ asset('front/herosection.png') }}" alt="Hero Section" class="img-fluid">
+            </div>
+        </section>
+
+        <section class="mobile-hero-section-2">
+            <h1 class="hero-title">
+                Nous procurons à vos enfants
+            </h1>
+            <h2 class="hero-subtitle">
+                La <span class="text-orange">meilleure</span> éducation au <span class="text-red">meilleur</span> prix
+            </h2>
+
+            <div class="buttons-container">
+                <button class="btn btn-dubass-inscription">
+                    <i class="fas fa-edit me-2"></i>
+                    Inscription
+                </button>
+                <button class="btn btn-dubass-secondary">
+                    En savoir plus
+                </button>
+            </div>
+        </section>
+
+        <section class="mobile-hero-section-3">
+            <div class="mobile-banners">
+                <div class="mobile-banner mobile-banner-menu">
+                    <i class="fas fa-bars mobile-banner-icon"></i>
+                    <span>Menu</span>
+                </div>
+                <div class="mobile-banner mobile-banner-portail">
+                    <i class="fas fa-unlock mobile-banner-icon"></i>
+                    <span>Portail</span>
+                </div>
+                <div class="mobile-banner mobile-banner-contact">
+                    <i class="fas fa-envelope mobile-banner-icon"></i>
+                    <span>Contact</span>
+                </div>
+            </div>
+        </section>
+    </div>
 
     <!-- Section des valeurs -->
     <section class="banner-section">
