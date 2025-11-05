@@ -1,67 +1,6 @@
 <laravel-boost-guidelines>
 === foundation rules ===
 
-# CLAUDE.md
-
-Ce fichier fournit des conseils à Claude Code (claude.ai/code) pour travailler avec le code de ce dépôt.
-
-## Aperçu du Projet
-
-Il s'agit d'une application Laravel 12 pour un site web de garderie/crèche ("Dubass"). Le projet est construit à partir d'un template HTML et sert principalement du contenu statique via des vues Blade.
-
-### Technologies Clés
-- Laravel 12 avec PHP 8.3.13
-- Vite pour la compilation des assets
-- Tailwind CSS 4.0 pour le style
-- Pest 4 pour les tests
-- Laravel Boost pour l'intégration MCP
-
-## Commandes de Développement
-
-### Configuration
-- `composer run setup` - Configuration complète du projet (installation des dépendances, copie .env, génération de clé, migration, build des assets)
-
-### Serveur de Développement
-- `composer run dev` - Démarre le serveur de développement avec rechargement à chaud (lance le serveur Laravel, queue worker, et serveur de dev Vite simultanément)
-- `php artisan serve` - Démarre uniquement le serveur de développement Laravel
-- `npm run dev` - Démarre le serveur de développement Vite pour le remplacement de module à chaud
-- `npm run build` - Construit les assets de production
-
-### Tests
-- `composer run test` - Lance tous les tests avec nettoyage de la config
-- `php artisan test` - Lance tous les tests
-- `php artisan test tests/Feature/ExampleTest.php` - Lance un fichier de test spécifique
-- `php artisan test --filter=testName` - Lance un test spécifique
-
-### Qualité du Code
-- `vendor/bin/pint --dirty` - Formate le code selon les standards du projet
-
-## Notes d'Architecture
-
-### Architecture Frontend
-- **Base Template**: Construit à partir d'un template HTML situé dans le répertoire `/template`
-- **Assets**: Assets statiques (CSS, JS, images) dans `/public` et assets de développement dans `/resources`
-- **Vues**: Tous les templates Blade utilisent la structure du template original (pas de layout partagé actuellement)
-- **Style**: Utilise du CSS personnalisé (`ist-dubass.css`, `style.css`) avec Bootstrap et des bibliothèques modernes
-
-### Structure Backend
-- **Routes**: Pattern de contrôleur unique - `HomeController` sert toutes les pages statiques
-- **Vues**: Rendu direct de template sans traitement de données complexe
-- **Base de données**: Structure Laravel 12 standard avec modèle User et migrations de base
-
-### Pages de Contenu Statique
-L'application sert ces pages principales :
-- Accueil (`/`)
-- À propos (`/about`)
-- Services (`/service`)
-- Programmes (`/program`)
-- Événements (`/event`)
-- Blog (`/blog`)
-- Équipe (`/team`)
-- Témoignages (`/testimonial`)
-- Contact (`/contact`)
-- Page d'erreur 404 (`/404`)
-
 # Laravel Boost Guidelines
 
 The Laravel Boost guidelines are specifically curated by Laravel maintainers for this application. These guidelines should be followed closely to enhance the user's satisfaction building Laravel applications.

@@ -1,218 +1,262 @@
 <!DOCTYPE html>
-<html lang="fr">
-
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
     <meta charset="utf-8">
-    <title>@yield('title', 'DUBASS - École d\'Excellence et d\'Innovation')</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="DUBASS, école excellence, innovation, éducation qualité, formation leaders, Côte d'Ivoire, préscolaire, primaire, secondaire, Safoura FADIKA, Kanvaly FADIGA" name="keywords">
-    <meta content="DUBASS - École d'Excellence et d'Innovation. Nous procurons à vos enfants la meilleure éducation au meilleur prix. Fondée en 2014 par Safoura FADIKA et Kanvaly FADIGA." name="description">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>@yield('title', 'DUBASS - Groupe Scolaire')</title>
 
-    <!-- Google Web Fonts -->
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Montserrat:wght@200;400;600&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <!-- Icon Font Stylesheet -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <!-- Libraries Stylesheet -->
-    <link href="{{ asset('lib/animate/animate.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('lib/lightbox/css/lightbox.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('lib/owlcarousel/assets/owl.carousel.min.css') }}" rel="stylesheet">
+    <style>
+        :root {
+            --dubass-blue: #2B3D88;
+            --dubass-orange: #C25C26;
+            --dubass-red: #dc2626;
+            --dubass-light-blue: #4f6bdb;
+        }
 
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
 
-    <!-- Template Stylesheet -->
-    <link href="{{ asset('css/style.css') }}" rel="stylesheet">
-    
-    <!-- Bootstrap Override with DUBASS Colors -->
-    <link href="{{ asset('css/bootstrap-override.css') }}" rel="stylesheet">
-    
-    <!-- DUBASS Custom Styles (Final Override) -->
-    <link href="{{ asset('css/ist-dubass.css') }}" rel="stylesheet">
-    
-    <!-- Icons Fix -->
-    <link href="{{ asset('css/icons-fix.css') }}" rel="stylesheet">
-    
-    <!-- Service Cards Fix -->
-    <link href="{{ asset('css/service-cards-fix.css') }}" rel="stylesheet">
-    
-    <!-- Blue Hover Force -->
-    <link href="{{ asset('css/blue-hover-force.css') }}" rel="stylesheet">
+        .btn-connexion {
+            background-color: var(--dubass-blue);
+            border-color: var(--dubass-blue);
+            color: white;
+            border-radius: 8px;
+        }
+
+        .btn-connexion:hover {
+            background-color: #1e2a5f;
+            border-color: #1e2a5f;
+            color: white;
+        }
+
+        .triangle {
+            width: 0;
+            height: 0;
+            border-top: 25px solid transparent;
+            border-bottom: 25px solid transparent;
+            border-right: 43px solid;
+            display: inline-block;
+        }
+
+        .triangle-blue {
+            border-right-color: var(--dubass-blue);
+        }
+
+        .triangle-orange {
+            border-right-color: var(--dubass-orange);
+        }
+
+        .triangle-red {
+            border-right-color: var(--dubass-red);
+        }
+
+        .triangles-container {
+            display: flex;
+            align-items: center;
+            gap: 0;
+        }
+
+        .navbar-nav .nav-link {
+            color: #6c757d !important;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: var(--dubass-blue) !important;
+        }
+
+        .navbar-toggler {
+            border: none;
+            padding: 0.5rem;
+            font-size: 1.25rem;
+            background-color: var(--dubass-orange);
+            border-radius: 8px;
+        }
+
+        .navbar-toggler:focus {
+            box-shadow: none;
+        }
+
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        }
+
+        /* Menu Desktop */
+        .desktop-navigation {
+            display: block;
+        }
+
+        /* Menu Mobile */
+        .mobile-navigation {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .desktop-navigation {
+                display: none !important;
+            }
+
+            .mobile-navigation {
+                display: block !important;
+            }
+
+            .mobile-nav-layout {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                padding: 0 1rem;
+            }
+
+            .mobile-navbar-collapse {
+                margin-top: 1rem;
+            }
+
+            .mobile-navbar-nav {
+                text-align: center;
+                padding: 1rem 0;
+                flex-direction: column;
+            }
+        }
+
+        @stack('styles')
+    </style>
 </head>
 
 <body>
-    <!-- Spinner Start -->
-    <div id="spinner" class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50  d-flex align-items-center justify-content-center">
-        <div class="spinner-grow text-primary" role="status"></div>
-    </div>
-    <!-- Spinner End -->
-
-    <!-- Navbar start -->
-    <div class="container-fluid border-bottom bg-light wow fadeIn" data-wow-delay="0.1s">
-        <div class="container topbar bg-primary d-none d-lg-block py-2" style="border-radius: 0 40px">
-            <div class="d-flex justify-content-between">
-                <div class="top-info ps-2">
-                    <small class="me-3"><i class="fas fa-map-marker-alt me-2 text-secondary"></i> <a href="#" class="text-white">Abidjan, Côte d'Ivoire</a></small>
-                    <small class="me-3"><i class="fas fa-envelope me-2 text-secondary"></i><a href="#" class="text-white">contact@dubass.ci</a></small>
-                </div>
-                <div class="top-link pe-2">
-                    <a href="" class="btn btn-light btn-sm-square rounded-circle"><i class="fab fa-facebook-f text-secondary"></i></a>
-                    <a href="" class="btn btn-light btn-sm-square rounded-circle"><i class="fab fa-instagram text-secondary"></i></a>
-                    <a href="" class="btn btn-light btn-sm-square rounded-circle me-0"><i class="fab fa-whatsapp text-secondary"></i></a>
-                </div>
+    <!-- Navigation Desktop -->
+    <nav class="navbar navbar-light bg-white desktop-navigation">
+        <div class="container-fluid">
+            <!-- Première ligne : Menu de navigation -->
+            <div class="w-100 px-5">
+                <ul class="navbar-nav d-flex flex-row justify-content-between w-100 px-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">À propos de nous</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Nos programmes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Inscription</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Nos services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Emploi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contactez nous</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Espace parents</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Espace enseignants</a>
+                    </li>
+                </ul>
             </div>
-        </div>
-        <div class="container px-0">
-            <nav class="navbar navbar-light navbar-expand-xl py-3">
-                <a href="{{ route('home') }}" class="navbar-brand d-flex align-items-center">
-                    <img src="{{ asset('gemini/logo.png') }}" alt="Groupe Scolaire Dubass" class="logo-img me-2">
-                    <h1 class="text-primary h3 mb-0">Groupe Scolaire<span class="text-secondary"> Dubass</span></h1>
-                </a>
-                <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                    <span class="fa fa-bars text-primary"></span>
+
+            <!-- Deuxième ligne : Logo + triangles + connexion -->
+            <div class="d-flex justify-content-between align-items-center w-100 px-0 mx-n3">
+                <!-- Logo -->
+                <div class="d-flex align-items-center">
+                    <img src="{{ asset('front/logo.png') }}" alt="DUBASS" height="100">
+                </div>
+
+                <!-- Triangles au centre -->
+                <div class="triangles-container">
+                    <div class="triangle triangle-blue"></div>
+                    <div class="triangle triangle-orange"></div>
+                    <div class="triangle triangle-red"></div>
+                </div>
+
+                <!-- Bouton connexion -->
+                <button class="btn btn-connexion">
+                    <i class="fas fa-user"></i>
+                    Connexion
                 </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="navbar-nav mx-auto">
-                        <a href="{{ route('home') }}" class="nav-item nav-link {{ request()->routeIs('home') ? 'active' : '' }}">Accueil</a>
-                        <a href="{{ route('about') }}" class="nav-item nav-link {{ request()->routeIs('about') ? 'active' : '' }}">À propos de nous</a>
-                        <a href="{{ route('mission') }}" class="nav-item nav-link {{ request()->routeIs('mission') ? 'active' : '' }}">Nos objectifs</a>
-                        <a href="{{ route('programs') }}" class="nav-item nav-link {{ request()->routeIs('programs') ? 'active' : '' }}">Nos programmes</a>
-                        <a href="{{ route('team') }}" class="nav-item nav-link {{ request()->routeIs('team') ? 'active' : '' }}">Notre Équipe</a>
-                        <a href="{{ route('contact') }}" class="nav-item nav-link {{ request()->routeIs('contact') ? 'active' : '' }}">Contactez-nous</a>
-                    </div>
-                    <a href="{{ route('contact') }}" class="btn btn-secondary px-4 py-2 rounded-full font-semibold text-sm">Inscription</a>
-                </div>
-            </nav>
-        </div>
-    </div>
-    <!-- Navbar End -->
-
-    @yield('content')
-
-    <!-- Footer Start -->
-    <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="row g-5">
-                <div class="col-md-6 col-lg-4 col-xl-3">
-                    <div class="footer-item">
-                        <div class="d-flex align-items-center mb-3">
-                            <img src="{{ asset('gemini/logo.png') }}" alt="Groupe Scolaire Dubass" class="footer-logo me-2">
-                            <h2 class="fw-bold mb-0"><span class="text-primary mb-0">Groupe Scolaire</span><span class="text-secondary"> Dubass</span></h2>
-                        </div>
-                        <p class="mb-4">Notre mission est d'éduquer, d'inspirer et de créer des leaders responsables, compétents et épanouis qui auront un impact positif sur la société en fournissant une éducation de qualité, inclusive et holistique à tous nos élèves.</p>
-                        <div class="border border-primary p-3 rounded bg-light">
-                            <h5 class="mb-3">Newsletter</h5>
-                            <div class="position-relative mx-auto border border-primary rounded" style="max-width: 400px;">
-                                <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Votre email">
-                                <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2 text-white">S'abonner</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 col-xl-3">
-                    <div class="footer-item">
-                        <h4 class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius">LIENS RAPIDES</h4>
-                        <div class="d-flex flex-column align-items-start">
-                            <a href="{{ route('home') }}" class="text-body mb-2">Accueil</a>
-                            <a href="{{ route('about') }}" class="text-body mb-2">À propos de nous</a>
-                            <a href="{{ route('mission') }}" class="text-body mb-2">Nos objectifs</a>
-                            <a href="{{ route('programs') }}" class="text-body mb-2">Nos programmes</a>
-                            <a href="{{ route('team') }}" class="text-body mb-2">Notre Équipe</a>
-                            <a href="{{ route('contact') }}" class="text-body mb-2">Contactez-nous</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 col-xl-3">
-                    <div class="footer-item">
-                        <h4 class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius">CONTACT</h4>
-                        <div class="d-flex flex-column align-items-start">
-                            <a href="" class="text-body mb-4"><i class="fa fa-map-marker-alt text-primary me-2"></i> Abidjan, Côte d'Ivoire</a>
-                            <a href="tel:+2250123456789" class="text-start rounded-0 text-body mb-4"><i class="fa fa-phone-alt text-primary me-2"></i> +225 01 23 45 67 89</a>
-                            <a href="mailto:contact@dubass.ci" class="text-start rounded-0 text-body mb-4"><i class="fas fa-envelope text-primary me-2"></i> contact@dubass.ci</a>
-                            <a href="" class="text-start rounded-0 text-body mb-4"><i class="fa fa-clock text-primary me-2"></i> Lun-Ven: 7h-17h</a>
-                            <div class="footer-icon d-flex">
-                                <a class="btn btn-primary btn-sm-square me-3 rounded-circle text-white" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a href="#" class="btn btn-primary btn-sm-square me-3 rounded-circle text-white"><i class="fab fa-instagram"></i></a>
-                                <a href="#" class="btn btn-primary btn-sm-square rounded-circle text-white"><i class="fab fa-whatsapp"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 col-xl-3">
-                    <div class="footer-item">
-                        <h4 class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius">NOTRE GALERIE</h4>
-                        <div class="row g-3">
-                            <div class="col-4">
-                                <div class="footer-galary-img rounded-circle border border-primary">
-                                    <img src="{{ asset('img/galary-1.jpg') }}" class="img-fluid rounded-circle p-2" alt="">
-                                </div>
-                           </div>
-                           <div class="col-4">
-                                <div class="footer-galary-img rounded-circle border border-primary">
-                                    <img src="{{ asset('img/galary-2.jpg') }}" class="img-fluid rounded-circle p-2" alt="">
-                                </div>
-                           </div>
-                            <div class="col-4">
-                                <div class="footer-galary-img rounded-circle border border-primary">
-                                    <img src="{{ asset('img/galary-3.jpg') }}" class="img-fluid rounded-circle p-2" alt="">
-                                </div>
-                           </div>
-                            <div class="col-4">
-                                <div class="footer-galary-img rounded-circle border border-primary">
-                                    <img src="{{ asset('img/galary-4.jpg') }}" class="img-fluid rounded-circle p-2" alt="">
-                                </div>
-                           </div>
-                            <div class="col-4">
-                                <div class="footer-galary-img rounded-circle border border-primary">
-                                    <img src="{{ asset('img/galary-5.jpg') }}" class="img-fluid rounded-circle p-2" alt="">
-                                </div>
-                           </div>
-                            <div class="col-4">
-                                <div class="footer-galary-img rounded-circle border border-primary">
-                                    <img src="{{ asset('img/galary-6.jpg') }}" class="img-fluid rounded-circle p-2" alt="">
-                                </div>
-                           </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
-    </div>
-    <!-- Footer End -->
+    </nav>
 
-    <!-- Copyright Start -->
-    <div class="container-fluid copyright bg-dark py-4">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    <span class="text-light">DUBASS - École d'Excellence et d'Innovation – La meilleure éducation au meilleur prix.</span>
+    <!-- Navigation Mobile -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white mobile-navigation">
+        <div class="container-fluid">
+            <!-- Logo + hamburger + connexion -->
+            <div class="mobile-nav-layout">
+                <!-- Logo -->
+                <div class="d-flex align-items-center">
+                    <img src="{{ asset('front/logo.png') }}" alt="DUBASS" height="120">
                 </div>
-                <div class="col-md-6 my-auto text-center text-md-end text-white">
-                    <span class="text-light">© 2024 DUBASS – Tous droits réservés.</span>
-                </div>
+
+                <!-- Menu hamburger -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mobileNavbarNav" aria-controls="mobileNavbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Bouton connexion -->
+                <button class="btn btn-connexion">
+                    <i class="fas fa-user"></i>
+                    Connexion
+                </button>
+            </div>
+
+            <!-- Menu mobile collapse -->
+            <div class="collapse navbar-collapse mobile-navbar-collapse" id="mobileNavbarNav">
+                <ul class="navbar-nav mobile-navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">À propos de nous</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Nos programmes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Inscription</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Nos services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Emploi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contactez nous</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Espace parents</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Espace enseignants</a>
+                    </li>
+                </ul>
             </div>
         </div>
-    </div>
-    <!-- Copyright End -->
+    </nav>
 
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-primary border-3 border-primary rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>   
-    
-    <!-- JavaScript Libraries -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="{{ asset('lib/wow/wow.min.js') }}"></script>
-    <script src="{{ asset('lib/easing/easing.min.js') }}"></script>
-    <script src="{{ asset('lib/waypoints/waypoints.min.js') }}"></script>
-    <script src="{{ asset('lib/lightbox/js/lightbox.min.js') }}"></script>
-    <script src="{{ asset('lib/owlcarousel/owl.carousel.min.js') }}"></script>
+    <!-- Contenu principal -->
+    <main>
+        @yield('content')
+    </main>
 
-    <!-- Template Javascript -->
-    <script src="{{ asset('js/main.js') }}"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    @stack('scripts')
 </body>
-
 </html>

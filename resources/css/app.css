@@ -6,28 +6,13 @@
 @source '../**/*.js';
 
 @theme {
-    --font-sans: 'Poppins', 'Roboto', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol', 'Noto Color Emoji';
     
-    /* 🎨 Palette principale - Groupe Scolaire DUBASS */
-    --color-primary: #1B4F9C;         /* Bleu éducatif, couleur institutionnelle principale */
-    --color-secondary: #4A90E2;       /* Bleu clair, pour les boutons ou les accents */
-    --color-accent: #F5C542;          /* Jaune doré, symbole d'énergie et de réussite */
-    
-    /* ⚪ Couleurs neutres */
-    --color-white: #FFFFFF;           /* Blanc pur */
-    --color-light: #F2F2F2;          /* Gris clair */
-    --color-text-primary: #333333;   /* Gris foncé */
-    --color-text-secondary: #555555; /* Gris moyen */
-    
-    /* 💡 Couleurs d'état */
-    --color-success: #4CAF50;         /* Vert éducatif */
-    --color-warning: #FFB300;         /* Orange doux */
-    --color-danger: #E53935;          /* Rouge clair */
-    --color-info: #2196F3;           /* Bleu d'accent */
-    
-    /* Police */
-    --font-title: 'Poppins', sans-serif;
-    --font-body: 'Roboto', sans-serif;
-    --font-special: 'Lora', serif;
+    /* Palette de couleurs DUBASS */
+    --color-dubass-blue: #2B3D88;
+    --color-dubass-orange: #C25C26;
+    --color-dubass-red: #dc2626;
+    --color-dubass-light-blue: #4f6bdb;
+    --color-dubass-gray: #6b7280;
 }
