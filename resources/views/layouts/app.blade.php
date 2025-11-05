@@ -140,123 +140,123 @@
 </head>
 
 <body>
-    <!-- Navigation Desktop -->
-    <nav class="navbar navbar-light bg-white desktop-navigation">
-        <div class="container-fluid">
-            <!-- Première ligne : Menu de navigation -->
-            <div class="w-100 px-5">
-                <ul class="navbar-nav d-flex flex-row justify-content-between w-100 px-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">À propos de nous</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Nos programmes</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Inscription</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Nos services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Emploi</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contactez nous</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Espace parents</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Espace enseignants</a>
-                    </li>
-                </ul>
-            </div>
-
-            <!-- Deuxième ligne : Logo + triangles + connexion -->
-            <div class="d-flex justify-content-between align-items-center w-100 px-0 mx-n3">
-                <!-- Logo -->
-                <div class="d-flex align-items-center">
-                    <img src="{{ asset('front/logo.png') }}" alt="DUBASS" height="100">
-                </div>
-
-                <!-- Triangles au centre -->
-                <div class="triangles-container">
-                    <div class="triangle triangle-blue"></div>
-                    <div class="triangle triangle-orange"></div>
-                    <div class="triangle triangle-red"></div>
-                </div>
-
-                <!-- Bouton connexion -->
-                <button class="btn btn-connexion">
-                    <i class="fas fa-user"></i>
-                    Connexion
-                </button>
-            </div>
+<!-- Navigation Desktop -->
+<nav class="navbar navbar-light bg-white desktop-navigation">
+    <div class="container-fluid">
+        <!-- Première ligne : Menu de navigation -->
+        <div class="w-100 px-5">
+            <ul class="navbar-nav d-flex flex-row justify-content-between w-100 px-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">À propos de nous</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Nos programmes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Inscription</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Nos services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Emploi</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contactez nous</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Espace parents</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Espace enseignants</a>
+                </li>
+            </ul>
         </div>
-    </nav>
 
-    <!-- Navigation Mobile -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white mobile-navigation">
-        <div class="container-fluid">
-            <!-- Logo + hamburger + connexion -->
-            <div class="mobile-nav-layout">
-                <!-- Logo -->
-                <div class="d-flex align-items-center">
-                    <img src="{{ asset('front/logo.png') }}" alt="DUBASS" height="120">
-                </div>
-
-                <!-- Menu hamburger -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mobileNavbarNav" aria-controls="mobileNavbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <!-- Bouton connexion -->
-                <button class="btn btn-connexion">
-                    <i class="fas fa-user"></i>
-                    Connexion
-                </button>
+        <!-- Deuxième ligne : Logo + triangles + connexion -->
+        <div class="d-flex justify-content-between align-items-center w-100 px-0 mx-n3">
+            <!-- Logo -->
+            <div class="d-flex align-items-center">
+                <img src="{{ asset('front/logo.png') }}" alt="DUBASS" height="100">
             </div>
 
-            <!-- Menu mobile collapse -->
-            <div class="collapse navbar-collapse mobile-navbar-collapse" id="mobileNavbarNav">
-                <ul class="navbar-nav mobile-navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">À propos de nous</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Nos programmes</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Inscription</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Nos services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Emploi</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contactez nous</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Espace parents</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Espace enseignants</a>
-                    </li>
-                </ul>
+            <!-- Triangles au centre -->
+            <div class="triangles-container">
+                <div class="triangle triangle-blue"></div>
+                <div class="triangle triangle-orange"></div>
+                <div class="triangle triangle-red"></div>
             </div>
+
+            <!-- Bouton connexion -->
+            <button class="btn btn-connexion">
+                <i class="fas fa-user"></i>
+                Connexion
+            </button>
         </div>
-    </nav>
+    </div>
+</nav>
 
-    <!-- Contenu principal -->
-    <main>
-        @yield('content')
-    </main>
+<!-- Navigation Mobile -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white mobile-navigation">
+    <div class="container-fluid">
+        <!-- Logo + hamburger + connexion -->
+        <div class="mobile-nav-layout">
+            <!-- Logo -->
+            <div class="d-flex align-items-center">
+                <img src="{{ asset('front/logo.png') }}" alt="DUBASS" height="120">
+            </div>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    @stack('scripts')
+            <!-- Menu hamburger -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mobileNavbarNav" aria-controls="mobileNavbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Bouton connexion -->
+            <button class="btn btn-connexion">
+                <i class="fas fa-user"></i>
+                Connexion
+            </button>
+        </div>
+
+        <!-- Menu mobile collapse -->
+        <div class="collapse navbar-collapse mobile-navbar-collapse" id="mobileNavbarNav">
+            <ul class="navbar-nav mobile-navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">À propos de nous</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Nos programmes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Inscription</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Nos services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Emploi</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contactez nous</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Espace parents</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Espace enseignants</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Contenu principal -->
+<main>
+    @yield('content')
+</main>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+@stack('scripts')
 </body>
 </html>
