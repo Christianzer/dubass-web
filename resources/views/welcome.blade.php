@@ -98,6 +98,11 @@
             align-items: stretch;
         }
 
+        /* Masquer le menu mobile sur desktop */
+        .mobile-dropdown-menu {
+            display: none;
+        }
+
         .banner-container {
             display: flex;
             height: 100%;
@@ -190,28 +195,35 @@
                 justify-content: center;
                 align-items: center;
                 height: 55vh;
+                height: 55dvh;
             }
 
             .mobile-hero-section-1 img {
-                max-width: 80%;
-                max-height: 80%;
+                max-width: 95%;
+                max-height: 90%;
                 object-fit: contain;
             }
 
             .mobile-hero-section-2 {
                 background-color: white;
                 padding: 1rem;
-                height: 30vh;
+                height: 35vh;
+                height: 35dvh;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
             }
 
             .mobile-sections-container {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100vw;
+                height: 100vh;
+                height: 100dvh;
                 display: flex;
                 flex-direction: column;
-                height: 100vh;
-                overflow: hidden;
+                z-index: 1000;
             }
 
             .mobile-hero-section-2 .hero-title {
@@ -247,7 +259,8 @@
 
             .mobile-hero-section-3 {
                 padding: 0;
-                height: 15vh;
+                height: 10vh;
+                height: 10dvh;
                 display: flex;
                 flex-direction: column;
             }
@@ -280,13 +293,19 @@
                 margin-bottom: 0.3rem;
             }
 
-            body {
+            html, body {
                 margin: 0;
                 padding: 0;
+                height: 100%;
+                width: 100%;
+                overflow: hidden;
+            }
+
+            body {
                 display: flex;
                 flex-direction: column;
+                height: 100dvh;
                 height: 100vh;
-                overflow: hidden;
             }
 
             main {
@@ -295,6 +314,7 @@
                 flex-direction: column;
                 margin: 0;
                 padding: 0;
+                height: 100%;
             }
 
             .mobile-banner-menu {
@@ -311,6 +331,83 @@
 
             .banner-section {
                 display: none;
+            }
+
+            /* Menu déroulant mobile - seulement sur mobile */
+            .mobile-dropdown-menu {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100vw;
+                height: 100vh;
+                background-color: rgba(0, 0, 0, 0.8);
+                z-index: 2000;
+                display: none;
+                opacity: 0;
+                transition: opacity 0.3s ease;
+            }
+
+            .mobile-dropdown-menu.show {
+                display: flex !important;
+                opacity: 1;
+            }
+
+            .mobile-menu-content {
+                width: 80%;
+                max-width: 300px;
+                background-color: white;
+                height: 100vh;
+                padding: 2rem 0;
+                transform: translateX(-100%);
+                transition: transform 0.3s ease;
+            }
+
+            .mobile-dropdown-menu.show .mobile-menu-content {
+                transform: translateX(0);
+            }
+
+            .mobile-menu-header {
+                padding: 0 1.5rem 2rem;
+                border-bottom: 2px solid var(--dubass-blue);
+                margin-bottom: 2rem;
+            }
+
+            .mobile-menu-title {
+                color: var(--dubass-blue);
+                font-size: 1.2rem;
+                font-weight: 700;
+                margin: 0;
+            }
+
+            .mobile-menu-close {
+                position: absolute;
+                top: 1rem;
+                right: 1rem;
+                background: none;
+                border: none;
+                font-size: 1.5rem;
+                color: var(--dubass-blue);
+                cursor: pointer;
+            }
+
+            .mobile-menu-item {
+                display: block;
+                padding: 1rem 1.5rem;
+                color: #333;
+                text-decoration: none;
+                border-bottom: 1px solid #eee;
+                transition: background-color 0.2s ease;
+            }
+
+            .mobile-menu-item:hover {
+                background-color: #f8f9fa;
+                color: var(--dubass-blue);
+            }
+
+            .mobile-menu-item i {
+                margin-right: 0.75rem;
+                width: 20px;
+                color: var(--dubass-orange);
             }
         }
     </style>
@@ -334,13 +431,13 @@
 
                         <!-- Boutons d'action -->
                         <div class="d-flex flex-column flex-sm-row gap-3 mt-5">
-                            <button class="btn btn-dubass-inscription btn-lg">
+                            <a href="{{ route('inscription') }}"  class="btn btn-dubass-inscription btn-lg">
                                 <i class="fas fa-edit me-2"></i>
                                 Inscription
-                            </button>
-                            <button class="btn btn-dubass-secondary btn-lg">
+                            </a>
+                            <a href="{{ route('about') }}"  class="btn btn-dubass-secondary btn-lg">
                                 En savoir plus
-                            </button>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -357,47 +454,96 @@
 
     <!-- Mobile Hero Sections -->
     <div class="mobile-sections-container d-block d-md-none">
-        <section class="mobile-hero-section-1">
+        <section class="mobile-hero-section-1 position-relative">
             <div class="text-center">
-                <img src="{{ asset('front/herosection.png') }}" alt="Hero Section" class="img-fluid">
+                <img src="{{ asset('front/herosection.png') }}" alt="Hero Section" class="img-fluid" style="max-width: 100%; max-height: 85%;">
+            </div>
+            <div class="position-absolute start-0 bottom-0 mb-3 ms-3">
+                <a href="#" class="text-white text-decoration-none fw-bold fs-3" style="font-family: 'Poppins', sans-serif;">À propos de nous</a>
             </div>
         </section>
 
-        <section class="mobile-hero-section-2">
-            <h1 class="hero-title">
+        <section class="mobile-hero-section-2" style="font-family: 'Roboto', sans-serif;">
+            <h1 class="hero-title fs-1">
                 Nous procurons à vos enfants
             </h1>
-            <h2 class="hero-subtitle">
+            <h2 class="hero-subtitle fs-2">
                 La <span class="text-orange">meilleure</span> éducation au <span class="text-red">meilleur</span> prix
             </h2>
 
             <div class="buttons-container">
-                <button class="btn btn-dubass-inscription">
+                <a href="{{ route('inscription') }}"  class="btn btn-dubass-inscription fs-5">
                     <i class="fas fa-edit me-2"></i>
                     Inscription
-                </button>
-                <button class="btn btn-dubass-secondary">
+                </a>
+                <a href="{{ route('about') }}"  class="btn btn-dubass-secondary fs-5">
                     En savoir plus
-                </button>
+                </a>
             </div>
         </section>
 
         <section class="mobile-hero-section-3">
             <div class="mobile-banners">
-                <div class="mobile-banner mobile-banner-menu">
+                <div class="mobile-banner mobile-banner-menu" id="mobileMenuBtn">
                     <i class="fas fa-bars mobile-banner-icon"></i>
                     <span>Menu</span>
                 </div>
-                <div class="mobile-banner mobile-banner-portail">
+                <a href="{{ route('about') }}" class="mobile-banner mobile-banner-portail" style="text-decoration: none;">
                     <i class="fas fa-unlock mobile-banner-icon"></i>
                     <span>Portail</span>
-                </div>
-                <div class="mobile-banner mobile-banner-contact">
+                </a>
+                <a href="{{ route('contact') }}" class="mobile-banner mobile-banner-contact">
                     <i class="fas fa-envelope mobile-banner-icon"></i>
                     <span>Contact</span>
-                </div>
+                </a>
             </div>
         </section>
+    </div>
+
+    <!-- Menu déroulant mobile -->
+    <div class="mobile-dropdown-menu" id="mobileDropdownMenu">
+        <div class="mobile-menu-content">
+            <div class="mobile-menu-header">
+                <h3 class="mobile-menu-title">Navigation</h3>
+                <button class="mobile-menu-close" id="mobileMenuClose">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="mobile-menu-items">
+                <a href="{{ route('about') }}" class="mobile-menu-item">
+                    <i class="fas fa-info-circle"></i>
+                    À propos
+                </a>
+                <a href="{{ route('founder') }}" class="mobile-menu-item">
+                    <i class="fas fa-user"></i>
+                    Mot du fondateur
+                </a>
+                <a href="{{ route('programs') }}" class="mobile-menu-item">
+                    <i class="fas fa-book"></i>
+                    Programmes
+                </a>
+                <a href="{{ route('team') }}" class="mobile-menu-item">
+                    <i class="fas fa-users"></i>
+                    Équipe dirigeante
+                </a>
+                <a href="{{ route('parents') }}" class="mobile-menu-item">
+                    <i class="fas fa-home"></i>
+                    Espace parents
+                </a>
+                <a href="{{ route('teachers') }}" class="mobile-menu-item">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                    Espace enseignants
+                </a>
+                <a href="{{ route('inscription') }}" class="mobile-menu-item">
+                    <i class="fas fa-edit"></i>
+                    Inscription
+                </a>
+                <a href="{{ route('contact') }}" class="mobile-menu-item">
+                    <i class="fas fa-envelope"></i>
+                    Contact
+                </a>
+            </div>
+        </div>
     </div>
 
     <!-- Section des valeurs -->
@@ -446,3 +592,41 @@
         </div>
     </section>
 @endsection
+
+@push('scripts')
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileDropdownMenu = document.getElementById('mobileDropdownMenu');
+    const mobileMenuClose = document.getElementById('mobileMenuClose');
+
+    // Ouvrir le menu
+    mobileMenuBtn.addEventListener('click', function() {
+        mobileDropdownMenu.classList.add('show');
+        document.body.style.overflow = 'hidden'; // Empêcher le scroll
+    });
+
+    // Fermer le menu avec le bouton X
+    mobileMenuClose.addEventListener('click', function() {
+        mobileDropdownMenu.classList.remove('show');
+        document.body.style.overflow = 'auto'; // Réactiver le scroll
+    });
+
+    // Fermer le menu en cliquant sur l'overlay
+    mobileDropdownMenu.addEventListener('click', function(e) {
+        if (e.target === mobileDropdownMenu) {
+            mobileDropdownMenu.classList.remove('show');
+            document.body.style.overflow = 'auto';
+        }
+    });
+
+    // Fermer le menu avec la touche Escape
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && mobileDropdownMenu.classList.contains('show')) {
+            mobileDropdownMenu.classList.remove('show');
+            document.body.style.overflow = 'auto';
+        }
+    });
+});
+</script>
+@endpush

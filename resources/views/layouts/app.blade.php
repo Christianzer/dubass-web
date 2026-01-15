@@ -147,28 +147,28 @@
         <div class="w-100 px-5">
             <ul class="navbar-nav d-flex flex-row justify-content-between w-100 px-0">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">À propos de nous</a>
+                    <a class="nav-link" href="{{ route('about') }}">À propos de nous</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Nos programmes</a>
+                    <a class="nav-link" href="{{ route('founder') }}">Mot du fondateur</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Inscription</a>
+                    <a class="nav-link" href="{{ route('team') }}">Notre équipe dirigeante</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Nos services</a>
+                    <a class="nav-link" href="{{ route('programs') }}">Nos programmes</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Emploi</a>
+                    <a class="nav-link" href="{{ route('inscription') }}">Inscription</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contactez nous</a>
+                    <a class="nav-link" href="{{ route('contact') }}">Contactez nous</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Espace parents</a>
+                    <a class="nav-link" href="{{ route('parents') }}">Espace parents</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Espace enseignants</a>
+                    <a class="nav-link" href="{{ route('teachers') }}">Espace enseignants</a>
                 </li>
             </ul>
         </div>
@@ -222,28 +222,28 @@
         <div class="collapse navbar-collapse mobile-navbar-collapse" id="mobileNavbarNav">
             <ul class="navbar-nav mobile-navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">À propos de nous</a>
+                    <a class="nav-link" href="{{ route('about') }}">À propos de nous</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Nos programmes</a>
+                    <a class="nav-link" href="{{ route('founder') }}">Mot du fondateur</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Inscription</a>
+                    <a class="nav-link" href="{{ route('team') }}">Notre équipe dirigeante</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Nos services</a>
+                    <a class="nav-link" href="">Nos programmes</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Emploi</a>
+                    <a class="nav-link" href="">Inscription</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contactez nous</a>
+                    <a class="nav-link" href="">Contactez nous</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Espace parents</a>
+                    <a class="nav-link" href="">Espace parents</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Espace enseignants</a>
+                    <a class="nav-link" href="">Espace enseignants</a>
                 </li>
             </ul>
         </div>
