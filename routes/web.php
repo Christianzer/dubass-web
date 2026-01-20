@@ -28,3 +28,6 @@ Route::get('/inscription', [InscriptionController::class, 'index'])->name('inscr
 Route::get('/contact', [ContactController::class, 'index'])->name('contact');
 Route::get('/espace-parents', [ParentsController::class, 'index'])->name('parents');
 Route::get('/espace-enseignants', [TeachersController::class, 'index'])->name('teachers');
+Route::get('/mardi-gras', function () {
+    return view('mardi-gras');
+})->name('mardi-gras');

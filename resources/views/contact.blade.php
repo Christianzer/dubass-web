@@ -254,7 +254,7 @@
                                     </div>
                                     <div class="contact-details">
                                         <h5>Adresse</h5>
-                                        <p>Cocody Riviera Golf, Abidjan<br>Côte d'Ivoire</p>
+                                        <p>25 BP 2309 Faya<br>En face de la pharmacie St Martin,<br>vers le nouveau camp</p>
                                     </div>
                                 </div>
                             </div>
@@ -265,7 +265,7 @@
                                     </div>
                                     <div class="contact-details">
                                         <h5>Téléphone</h5>
-                                        <p>+225 27 22 48 12 34<br>+225 05 04 03 02 01</p>
+                                        <p>05 65 65 43 94<br>+225 25 22 01 87 52</p>
                                     </div>
                                 </div>
                             </div>
@@ -279,7 +279,7 @@
                                     </div>
                                     <div class="contact-details">
                                         <h5>Email</h5>
-                                        <p>contact@dubass.edu.ci<br>direction@dubass.edu.ci</p>
+                                        <p>istdubass@gmail.com</p>
                                     </div>
                                 </div>
                             </div>
