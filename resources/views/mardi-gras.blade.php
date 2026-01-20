@@ -3,7 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mardi Gras 2026 - DUBASS - Groupe Scolaire</title>
+
+    <!-- SEO Meta Tags -->
+    <title>Mardi Gras 2026 - DUBASS - Groupe Scolaire Abidjan Côte d'Ivoire</title>
+    <meta name="description" content="Fête du Mardi Gras 2026 au Groupe Scolaire DUBASS. Découvrez les tenues traditionnelles africaines par classe : maternelle, primaire et secondaire. Brassage culturel des pays africains à Abidjan.">
+    <meta name="keywords" content="Mardi Gras, DUBASS, Groupe Scolaire DUBASS, école Abidjan, Côte d'Ivoire, tenues africaines, fête scolaire, maternelle, primaire, secondaire, brassage culturel, Afrique, tradition africaine, école privée Abidjan">
+    <meta name="author" content="Groupe Scolaire DUBASS">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="{{ url('/mardi-gras') }}">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ url('/mardi-gras') }}">
+    <meta property="og:title" content="Mardi Gras 2026 - Groupe Scolaire DUBASS">
+    <meta property="og:description" content="Fête du Mardi Gras 2026 au Groupe Scolaire DUBASS. Brassage culturel des pays africains - Tenues traditionnelles par classe.">
+    <meta property="og:image" content="{{ asset('front/logo.png') }}">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:site_name" content="Groupe Scolaire DUBASS">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="{{ url('/mardi-gras') }}">
+    <meta name="twitter:title" content="Mardi Gras 2026 - Groupe Scolaire DUBASS">
+    <meta name="twitter:description" content="Fête du Mardi Gras 2026 au Groupe Scolaire DUBASS. Brassage culturel des pays africains.">
+    <meta name="twitter:image" content="{{ asset('front/logo.png') }}">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="{{ asset('front/logo.png') }}">
+    <link rel="apple-touch-icon" href="{{ asset('front/logo.png') }}">
+
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
@@ -85,7 +113,7 @@
                     <span class="text-3xl">🌍</span>
                 </div>
                 <h1 class="font-display text-3xl md:text-5xl font-bold mb-3 drop-shadow-lg text-white">Fête du Mardi Gras 2026</h1>
-                <p class="text-lg md:text-xl font-medium mb-4 text-white/90">Groupe Scolaire DUBASS</p>
+                <p class="text-lg md:text-xl font-medium mb-4 text-white/90">Groupe Scolaire DUBASS - Abidjan, Côte d'Ivoire</p>
                 <div class="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full">
                     <span class="text-2xl">👗</span>
                     <span class="font-semibold text-white">Brassage culturel des pays africains</span>
@@ -482,14 +510,13 @@
 
     <script>
         function toggleAccordion(section) {
-            const content = document.getElementById(`content-${section}`);
-            const icon = document.getElementById(`icon-${section}`);
+            var content = document.getElementById('content-' + section);
+            var icon = document.getElementById('icon-' + section);
 
-            const isOpen = content.classList.contains('open');
+            var isOpen = content.classList.contains('open');
 
-            // Fermer tous les autres accordéons
-            document.querySelectorAll('.accordion-content').forEach(c => c.classList.remove('open'));
-            document.querySelectorAll('.rotate-icon').forEach(i => i.classList.remove('open'));
+            document.querySelectorAll('.accordion-content').forEach(function(c) { c.classList.remove('open'); });
+            document.querySelectorAll('.rotate-icon').forEach(function(i) { i.classList.remove('open'); });
 
             if (!isOpen) {
                 content.classList.add('open');
