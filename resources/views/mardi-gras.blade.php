@@ -32,7 +32,7 @@
     <link rel="icon" type="image/png" href="{{ asset('front/logo.png') }}">
     <link rel="apple-touch-icon" href="{{ asset('front/logo.png') }}">
 
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="{{asset('front/gras.css')}}"></script>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         body {
