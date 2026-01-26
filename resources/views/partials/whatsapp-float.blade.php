@@ -1,5 +1,5 @@
 {{-- Bouton flottant WhatsApp --}}
-<a href="https://wa.me/33565654394"
+<a href="https://wa.me/2250565654394"
    target="_blank"
    rel="noopener noreferrer"
    class="whatsapp-float"
