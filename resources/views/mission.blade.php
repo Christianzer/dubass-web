@@ -270,7 +270,7 @@
 
             <!-- Section Droite - Photo -->
             <div class="right-section">
-                <img src="{{ asset('front/professionnel.png') }}" alt="Professionnelle DUBASS" class="professional-image">
+                <img src="{{ asset('images/student4.png') }}" alt="Professionnelle DUBASS" class="professional-image">
             </div>
         </div>
     </section>

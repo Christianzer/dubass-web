@@ -260,7 +260,7 @@
 
             <!-- Section Droite -->
             <div class="right-section">
-                <img src="{{ asset('front/eleve.png') }}" alt="Élève DUBASS" class="student-photo">
+                <img src="{{ asset('images/student6.png') }}" alt="Élève DUBASS" class="student-photo">
             </div>
         </div>
 

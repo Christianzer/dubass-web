@@ -594,39 +594,39 @@
 @endsection
 
 @push('scripts')
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-    const mobileDropdownMenu = document.getElementById('mobileDropdownMenu');
-    const mobileMenuClose = document.getElementById('mobileMenuClose');
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+            const mobileDropdownMenu = document.getElementById('mobileDropdownMenu');
+            const mobileMenuClose = document.getElementById('mobileMenuClose');
 
-    // Ouvrir le menu
-    mobileMenuBtn.addEventListener('click', function() {
-        mobileDropdownMenu.classList.add('show');
-        document.body.style.overflow = 'hidden'; // Empêcher le scroll
-    });
+            // Ouvrir le menu
+            mobileMenuBtn.addEventListener('click', function() {
+                mobileDropdownMenu.classList.add('show');
+                document.body.style.overflow = 'hidden'; // Empêcher le scroll
+            });
 
-    // Fermer le menu avec le bouton X
-    mobileMenuClose.addEventListener('click', function() {
-        mobileDropdownMenu.classList.remove('show');
-        document.body.style.overflow = 'auto'; // Réactiver le scroll
-    });
+            // Fermer le menu avec le bouton X
+            mobileMenuClose.addEventListener('click', function() {
+                mobileDropdownMenu.classList.remove('show');
+                document.body.style.overflow = 'auto'; // Réactiver le scroll
+            });
 
-    // Fermer le menu en cliquant sur l'overlay
-    mobileDropdownMenu.addEventListener('click', function(e) {
-        if (e.target === mobileDropdownMenu) {
-            mobileDropdownMenu.classList.remove('show');
-            document.body.style.overflow = 'auto';
-        }
-    });
+            // Fermer le menu en cliquant sur l'overlay
+            mobileDropdownMenu.addEventListener('click', function(e) {
+                if (e.target === mobileDropdownMenu) {
+                    mobileDropdownMenu.classList.remove('show');
+                    document.body.style.overflow = 'auto';
+                }
+            });
 
-    // Fermer le menu avec la touche Escape
-    document.addEventListener('keydown', function(e) {
-        if (e.key === 'Escape' && mobileDropdownMenu.classList.contains('show')) {
-            mobileDropdownMenu.classList.remove('show');
-            document.body.style.overflow = 'auto';
-        }
-    });
-});
-</script>
+            // Fermer le menu avec la touche Escape
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape' && mobileDropdownMenu.classList.contains('show')) {
+                    mobileDropdownMenu.classList.remove('show');
+                    document.body.style.overflow = 'auto';
+                }
+            });
+        });
+    </script>
 @endpush
