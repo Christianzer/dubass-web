@@ -131,7 +131,7 @@
         }
 
         .student-photo {
-            width: 100%;
+            width: 68%;
             height: 100%;
             object-fit: cover;
             border-radius: 5px;

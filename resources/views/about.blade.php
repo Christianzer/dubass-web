@@ -109,10 +109,11 @@
         }
 
         .students-image {
-            width: 130%;
+            width: 108%;
             height: 80%;
             object-fit: cover;
-            margin-left: -10%;
+            margin-left: 9%;
+            margin-top: -50%;
         }
 
         .colored-band {
@@ -365,7 +366,7 @@
                 width: 100%;
                 height: auto;
                 margin-left: 0;
-                margin-top: 2rem;
+                margin-top: -10rem;
             }
 
             .row {
@@ -428,7 +429,7 @@
                 <!-- Image des élèves (côté droit) -->
                 <div class="col-lg-6">
                     <div class="text-center">
-                        <img src="{{ asset('front/multi.png') }}" alt="Élèves en uniforme DUBASS" class="students-image">
+                        <img src="{{ asset('images/student1.png') }}" alt="Élèves en uniforme DUBASS" class="students-image">
                     </div>
                 </div>
             </div>

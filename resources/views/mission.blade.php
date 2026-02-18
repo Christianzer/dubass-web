@@ -23,7 +23,7 @@
 
         /* Section Gauche - 60% */
         .left-section {
-            width: 60%;
+            width: 50%;
             display: flex;
             flex-direction: column;
             position: relative;
@@ -159,7 +159,7 @@
 
         /* Section Droite - 40% */
         .right-section {
-            width: 40%;
+            width: 50%;
             height: 100%;
             position: relative;
             overflow: hidden;

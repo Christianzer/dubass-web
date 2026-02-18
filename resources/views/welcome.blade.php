@@ -442,10 +442,25 @@
                     </div>
                 </div>
 
-                <!-- Image hero -->
+                <!-- Carrousel hero -->
                 <div class="col-lg-6 mt-5 mt-lg-0">
                     <div class="hero-image-container position-relative">
-                        <img src="{{ asset('front/herosection.png') }}" alt="Hero Section" class="img-fluid">
+                        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3500">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="{{ asset('front/herosection.png') }}" alt="DUBASS Groupe Scolaire" class="img-fluid d-block mx-auto" style="width:625px;height:399px;object-fit:contain;">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="{{ asset('images/student.png') }}" alt="Élève DUBASS" class="img-fluid d-block mx-auto" style="width:625px;height:399px;object-fit:contain;">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="{{ asset('images/student2.png') }}" alt="Élèves DUBASS" class="img-fluid d-block mx-auto" style="width:625px;height:399px;object-fit:contain;">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="{{ asset('images/student3.png') }}" alt="Élèves DUBASS" class="img-fluid d-block mx-auto" style="width:625px;height:399px;object-fit:contain;">
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
